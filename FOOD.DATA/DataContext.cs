@@ -9,6 +9,6 @@ namespace FOOD.DATA
         {
 
         }
-        public DbSet<Testing> Testdbs { get; set; } 
+        public DbSet<User> users { get; set; }
     }
 }

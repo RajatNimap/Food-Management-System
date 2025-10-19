@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace FOOD.DATA.Entites
 {
-    public class Testing
+    public enum Role
     {
-        public int id { get; set; }
-        public string name { get; set; }    
-        public int age { get; set; }
-       
+        Admin,
+        Cashier
     }
 }
