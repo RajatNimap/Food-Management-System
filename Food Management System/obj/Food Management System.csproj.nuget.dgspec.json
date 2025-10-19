@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Food Management System.csproj": {}
+    "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\Food Management System\\Food Management System.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Food Management System.csproj": {
+    "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\Food Management System\\Food Management System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Food Management System.csproj",
+        "projectUniqueName": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\Food Management System\\Food Management System.csproj",
         "projectName": "Food Management System",
-        "projectPath": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Food Management System.csproj",
-        "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\obj\\",
+        "projectPath": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\Food Management System\\Food Management System.csproj",
+        "packagesPath": "C:\\Users\\Rajat Pandit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\Food Management System\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rajat Pandit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\FOOD.DATA.csproj": {
-                "projectPath": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\FOOD.DATA.csproj"
+              "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\FOOD.DATA.csproj": {
+                "projectPath": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\FOOD.DATA.csproj"
               }
             }
           }
@@ -96,20 +96,20 @@
         }
       }
     },
-    "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\FOOD.DATA.csproj": {
+    "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\FOOD.DATA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\FOOD.DATA.csproj",
+        "projectUniqueName": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\FOOD.DATA.csproj",
         "projectName": "FOOD.DATA",
-        "projectPath": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\FOOD.DATA.csproj",
-        "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\obj\\",
+        "projectPath": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\FOOD.DATA.csproj",
+        "packagesPath": "C:\\Users\\Rajat Pandit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rajat Pandit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
