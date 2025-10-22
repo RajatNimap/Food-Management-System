@@ -13,9 +13,9 @@ namespace FOOD.SERVICES.UserServices
     {
         public Task<IEnumerable<User>> GetAllUser();
         public Task<User> GetSingleUser(int id);
-        public Task AddUser(UserModel user);   
-        public Task UpdateUser(int id,UserModel user);
-        public Task DeleteUser(int id);
+        public Task<bool> AddUser(UserModel user);   
+        public Task<bool> UpdateUser(int id,UserModel user);
+        public Task<bool> DeleteUser(int id);
 
     }
 }

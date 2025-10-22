@@ -11,6 +11,8 @@ namespace FOOD.DATA.Repository.UserRepository
 {
     public interface IUserRepository:IRepository<User>
     {
-        public Task<User?> VerifyUser(LoginModel login);
+        //public Task<User?> VerifyUser(LoginModel login);
+        public Task<User> verifyMail(string email);
+
     }
 }

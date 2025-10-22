@@ -1,7 +1,15 @@
 using FOOD.DATA;
 using FOOD.DATA.Infrastructure;
+using FOOD.DATA.Repository.InventoryRepository;
+using FOOD.DATA.Repository.MenuRepository;
+using FOOD.DATA.Repository.OderRepository;
+using FOOD.DATA.Repository.RecipeRepository;
 using FOOD.SERVICES.AuthenticationServices;
+using FOOD.SERVICES.Inventery;
 using FOOD.SERVICES.Mapping;
+using FOOD.SERVICES.MenuServices;
+using FOOD.SERVICES.OrderServices;
+using FOOD.SERVICES.RecipeServices;
 using FOOD.SERVICES.UserServices;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
@@ -36,6 +44,10 @@ builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddScoped<IUserServices, UserServices>();
+builder.Services.AddScoped<IInventoryService, InventoryService>();
+builder.Services.AddScoped<IMenuService, MenuService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IRecipeService, RecipeService>();
 builder.Services.AddScoped<IAuth, Auth>();  
 var app = builder.Build();
 

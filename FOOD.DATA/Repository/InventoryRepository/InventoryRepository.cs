@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using FOOD.DATA.Entites;
+using FOOD.DATA.Infrastructure;
+
+namespace FOOD.DATA.Repository.InventoryRepository
+{
+    public class InventoryRepository:Repository<Inventory>, IInventoryRepository    
+    {
+        private readonly DataContext dbcontext;
+        public InventoryRepository(DataContext dbcontext):base(dbcontext) 
+        {
+            this.dbcontext = dbcontext;
+        }
+    }
+}

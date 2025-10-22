@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FOOD.DATA.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20251022050843_database-design")]
-    partial class databasedesign
+    [Migration("20251022064240_dbdesign")]
+    partial class dbdesign
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -63,7 +63,7 @@ namespace FOOD.DATA.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Inventory");
+                    b.ToTable("inventories");
                 });
 
             modelBuilder.Entity("FOOD.DATA.Entites.Menu", b =>
@@ -107,7 +107,7 @@ namespace FOOD.DATA.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Menu");
+                    b.ToTable("menus");
                 });
 
             modelBuilder.Entity("FOOD.DATA.Entites.OrderItems", b =>
@@ -153,7 +153,7 @@ namespace FOOD.DATA.Migrations
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("OrderItems");
+                    b.ToTable("orderItems");
                 });
 
             modelBuilder.Entity("FOOD.DATA.Entites.Orders", b =>
@@ -200,7 +200,7 @@ namespace FOOD.DATA.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Orders");
+                    b.ToTable("orders");
                 });
 
             modelBuilder.Entity("FOOD.DATA.Entites.Recipe", b =>
@@ -232,7 +232,7 @@ namespace FOOD.DATA.Migrations
 
                     b.HasIndex("MenuId");
 
-                    b.ToTable("Recipe");
+                    b.ToTable("recipes");
                 });
 
             modelBuilder.Entity("FOOD.DATA.Entites.User", b =>

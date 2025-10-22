@@ -116,7 +116,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\FOOD.DATA.csproj": {
+                "projectPath": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\FOOD.DATA.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

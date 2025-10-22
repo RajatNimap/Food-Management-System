@@ -29,14 +29,20 @@ namespace FOOD.SERVICES.AuthenticationServices
         }
         public async Task<string> IsAuthenticated(LoginModel login)
         {
-            var verify = await unitOfWork.UserRepository.VerifyUser(login);
-
-            if (verify == null) {
-
-                return "";
+            var user = await unitOfWork.UserRepository.verifyMail(login.Email);
+            if (user == null)
+            {
+                return string.Empty;
             }
+            var verifyCredential = BCrypt.Net.BCrypt.Verify(login.Password, user.Password);
+          
+              if(verifyCredential == false)
+               {
+                return string.Empty;
+               }
+         
 
-            return GenerateToken(verify);
+            return GenerateToken(user);
            
         }
 

@@ -18,17 +18,25 @@ namespace FOOD.DATA.Repository.UserRepository
            this.dbcontext = dbcontext;   
         }
 
-        public async Task<User?> VerifyUser(LoginModel login)
+        public async Task<User?> verifyMail(string email)
         {
-            var user = await dbcontext.users.FirstOrDefaultAsync(x => x.Email == login.Email);
-            if (user == null) {
-
-                 return null;      
-               
-            }
-            var verifyCredential = BCrypt.Net.BCrypt.Verify(login.Password, user.Password);
-            return verifyCredential ? user : null;
-
+            return await dbcontext.users.FirstOrDefaultAsync(x => x.Email == email);
         }
+
+
+
+        //public async Task<User?> VerifyUser(LoginModel login)
+        //{
+        //    var user = await dbcontext.users.FirstOrDefaultAsync(x => x.Email == login.Email);
+        //    if (user == null) {
+
+        //         return null;      
+
+        //    }
+        //    var verifyCredential = BCrypt.Net.BCrypt.Verify(login.Password, user.Password);
+        //    return verifyCredential ? user : null;
+
+        //}
+
     }
 }

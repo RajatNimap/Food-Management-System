@@ -8,7 +8,7 @@ namespace FOOD.DATA.Entites
 {
     public class Menu : BaseEntity  
     {
-        public int MenuId { get; set; }
+       // public int MenuId { get; set; }
         public string MenuName { get; set; }
         public decimal Price { get; set; }
         public string Description { get; set; }

@@ -9,7 +9,7 @@ namespace FOOD.DATA.Entites
 {
     public class OrderItems : BaseEntity  
     {
-        public int OrderDetailId { get; set; }
+       // public int OrderDetailId { get; set; }
         public int OrderId { get; set; }
         public Orders Order { get; set; }  
         public int MenuId { get; set; }

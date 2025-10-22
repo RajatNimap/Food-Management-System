@@ -10,5 +10,10 @@ namespace FOOD.DATA
 
         }
         public DbSet<User> users { get; set; }
+        public DbSet<Inventory> inventories { get; set; }
+        public DbSet<Orders> orders { get; set; }   
+        public DbSet<OrderItems> orderItems { get; set; }   
+        public DbSet<Recipe> recipes { get; set; }
+        public DbSet<Menu> menus { get; set; }
     }
 }
