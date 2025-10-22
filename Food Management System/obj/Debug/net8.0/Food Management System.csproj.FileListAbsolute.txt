@@ -347,3 +347,10 @@ C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\Food Managemen
 C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\Food Management System\obj\Debug\net8.0\Food Man.07EA2F4A.Up2Date
 C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\Food Management System\obj\Debug\net8.0\Food Management System.genruntimeconfig.cache
 C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\Food Management System\obj\Debug\net8.0\ref\Food Management System.dll
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\Food Management System\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\Food Management System\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\Food Management System\bin\Debug\net8.0\FOOD.MODEL.dll
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\Food Management System\bin\Debug\net8.0\FOOD.SERVICES.dll
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\Food Management System\bin\Debug\net8.0\FOOD.SERVICES.pdb
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\Food Management System\bin\Debug\net8.0\FOOD.MODEL.pdb
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\Food Management System\bin\Debug\net8.0\BCrypt.Net-Next.dll

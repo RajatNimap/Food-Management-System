@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FOOD.DATA.Entites
 {
-    public enum Role
-    {
-        Admin,
-        Cashier
+        public enum Role
+        {
+            Admin,
+            Cashier
+        }
     }
-}

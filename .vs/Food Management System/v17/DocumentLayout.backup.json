@@ -3,28 +3,136 @@
   "WorkspaceRootPath": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food management system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|solutionrelative:food management system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Migrations\\20251022050843_database-design.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FOOD.DATA\\Migrations\\20251022050843_database-design.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Migrations\\20251019075153_newrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FOOD.DATA\\Migrations\\20251019075153_newrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\entites\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\entites\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\entites\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\entites\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\entites\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\entites\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\entites\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\entites\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\entites\\orderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\entites\\orderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\entites\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\entites\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\entites\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\entites\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\entites\\roleenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\entites\\roleenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\entites\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\entites\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.model\\model\\baseentitymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|solutionrelative:food.model\\model\\baseentitymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.services\\userservices\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\userservices\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.model\\model\\roleenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|solutionrelative:food.model\\model\\roleenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.services\\mapping\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\mapping\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.services\\authenticationservices\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\authenticationservices\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.services\\authenticationservices\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\authenticationservices\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.model\\model\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|solutionrelative:food.model\\model\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.model\\model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|solutionrelative:food.model\\model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\repository\\userrepository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\repository\\userrepository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\repository\\userrepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\repository\\userrepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.services\\userservices\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\userservices\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food management system\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|solutionrelative:food management system\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food management system\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|solutionrelative:food management system\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food management system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|solutionrelative:food management system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\infrastructure\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\infrastructure\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\infrastructure\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\infrastructure\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\infrastructure\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\infrastructure\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\infrastructure\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\infrastructure\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\migrations\\20251021054113_initial1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\migrations\\20251021054113_initial1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.services\\food.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\food.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.model\\food.model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|solutionrelative:food.model\\food.model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food management system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|solutionrelative:food management system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\rajat pandit\\onedrive\\desktop\\fms\\food-management-system\\food.data\\migrations\\20251019075153_newrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\migrations\\20251019075153_newrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,32 +155,292 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\Food Management System\\appsettings.json",
-              "RelativeDocumentMoniker": "Food Management System\\appsettings.json",
-              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\Food Management System\\appsettings.json",
-              "RelativeToolTip": "Food Management System\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-19T07:53:21.794Z",
+              "Title": "20251022050843_database-design.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Migrations\\20251022050843_database-design.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Migrations\\20251022050843_database-design.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Migrations\\20251022050843_database-design.cs",
+              "RelativeToolTip": "FOOD.DATA\\Migrations\\20251022050843_database-design.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T05:08:43.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "20251019075153_newrepo.cs",
-              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Migrations\\20251019075153_newrepo.cs",
-              "RelativeDocumentMoniker": "FOOD.DATA\\Migrations\\20251019075153_newrepo.cs",
-              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Migrations\\20251019075153_newrepo.cs",
-              "RelativeToolTip": "FOOD.DATA\\Migrations\\20251019075153_newrepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\Inventory.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Entites\\Inventory.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\Inventory.cs",
+              "RelativeToolTip": "FOOD.DATA\\Entites\\Inventory.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAYwAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T07:51:53.666Z",
+              "WhenOpened": "2025-10-22T04:51:31.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Recipe.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\Recipe.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Entites\\Recipe.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\Recipe.cs",
+              "RelativeToolTip": "FOOD.DATA\\Entites\\Recipe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:46:26.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\Menu.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Entites\\Menu.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\Menu.cs",
+              "RelativeToolTip": "FOOD.DATA\\Entites\\Menu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:39:55.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderItems.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\OrderItems.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Entites\\OrderItems.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\OrderItems.cs",
+              "RelativeToolTip": "FOOD.DATA\\Entites\\OrderItems.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T15:43:47.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BaseEntityModel.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.MODEL\\Model\\BaseEntityModel.cs",
+              "RelativeDocumentMoniker": "FOOD.MODEL\\Model\\BaseEntityModel.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.MODEL\\Model\\BaseEntityModel.cs",
+              "RelativeToolTip": "FOOD.MODEL\\Model\\BaseEntityModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T13:11:49.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Orders.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\Orders.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Entites\\Orders.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\Orders.cs",
+              "RelativeToolTip": "FOOD.DATA\\Entites\\Orders.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T14:56:04.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RoleEnum.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\RoleEnum.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Entites\\RoleEnum.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\RoleEnum.cs",
+              "RelativeToolTip": "FOOD.DATA\\Entites\\RoleEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T07:44:00.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\User.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Entites\\User.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\User.cs",
+              "RelativeToolTip": "FOOD.DATA\\Entites\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T07:42:46.034Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Entites\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\BaseEntity.cs",
+              "RelativeToolTip": "FOOD.DATA\\Entites\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T07:42:41.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserServices.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.SERVICES\\UserServices\\UserServices.cs",
+              "RelativeDocumentMoniker": "FOOD.SERVICES\\UserServices\\UserServices.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.SERVICES\\UserServices\\UserServices.cs",
+              "RelativeToolTip": "FOOD.SERVICES\\UserServices\\UserServices.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwD0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T13:00:39.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Mapping.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.SERVICES\\Mapping\\Mapping.cs",
+              "RelativeDocumentMoniker": "FOOD.SERVICES\\Mapping\\Mapping.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.SERVICES\\Mapping\\Mapping.cs",
+              "RelativeToolTip": "FOOD.SERVICES\\Mapping\\Mapping.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T04:18:17.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IAuth.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.SERVICES\\AuthenticationServices\\IAuth.cs",
+              "RelativeDocumentMoniker": "FOOD.SERVICES\\AuthenticationServices\\IAuth.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.SERVICES\\AuthenticationServices\\IAuth.cs",
+              "RelativeToolTip": "FOOD.SERVICES\\AuthenticationServices\\IAuth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T09:12:11.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.MODEL\\Model\\UserModel.cs",
+              "RelativeDocumentMoniker": "FOOD.MODEL\\Model\\UserModel.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.MODEL\\Model\\UserModel.cs",
+              "RelativeToolTip": "FOOD.MODEL\\Model\\UserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T13:11:00.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Auth.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.SERVICES\\AuthenticationServices\\Auth.cs",
+              "RelativeDocumentMoniker": "FOOD.SERVICES\\AuthenticationServices\\Auth.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.SERVICES\\AuthenticationServices\\Auth.cs",
+              "RelativeToolTip": "FOOD.SERVICES\\AuthenticationServices\\Auth.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwCcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T09:13:03.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RoleEnum.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.MODEL\\Model\\RoleEnum.cs",
+              "RelativeDocumentMoniker": "FOOD.MODEL\\Model\\RoleEnum.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.MODEL\\Model\\RoleEnum.cs",
+              "RelativeToolTip": "FOOD.MODEL\\Model\\RoleEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T13:10:58.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.MODEL\\Model\\LoginModel.cs",
+              "RelativeDocumentMoniker": "FOOD.MODEL\\Model\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.MODEL\\Model\\LoginModel.cs",
+              "RelativeToolTip": "FOOD.MODEL\\Model\\LoginModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T09:09:30.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Repository\\UserRepository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Repository\\UserRepository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Repository\\UserRepository\\UserRepository.cs",
+              "RelativeToolTip": "FOOD.DATA\\Repository\\UserRepository\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T12:06:42.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Repository\\UserRepository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Repository\\UserRepository\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Repository\\UserRepository\\IUserRepository.cs",
+              "RelativeToolTip": "FOOD.DATA\\Repository\\UserRepository\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T12:05:49.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IUserServices.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.SERVICES\\UserServices\\IUserServices.cs",
+              "RelativeDocumentMoniker": "FOOD.SERVICES\\UserServices\\IUserServices.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.SERVICES\\UserServices\\IUserServices.cs",
+              "RelativeToolTip": "FOOD.SERVICES\\UserServices\\IUserServices.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T13:00:17.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\Food Management System\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Food Management System\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\Food Management System\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Food Management System\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T04:29:25.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\Food Management System\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Food Management System\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\Food Management System\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Food Management System\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwBoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T13:47:41.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "DataContext.cs",
               "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\DataContext.cs",
               "RelativeDocumentMoniker": "FOOD.DATA\\DataContext.cs",
@@ -85,41 +453,132 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RoleEnum.cs",
-              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\RoleEnum.cs",
-              "RelativeDocumentMoniker": "FOOD.DATA\\Entites\\RoleEnum.cs",
-              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\RoleEnum.cs",
-              "RelativeToolTip": "FOOD.DATA\\Entites\\RoleEnum.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\Food Management System\\Program.cs",
+              "RelativeDocumentMoniker": "Food Management System\\Program.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\Food Management System\\Program.cs",
+              "RelativeToolTip": "Food Management System\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T07:44:00.088Z",
+              "WhenOpened": "2025-10-19T11:29:52.844Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\User.cs",
-              "RelativeDocumentMoniker": "FOOD.DATA\\Entites\\User.cs",
-              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\User.cs",
-              "RelativeToolTip": "FOOD.DATA\\Entites\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "DocumentIndex": 24,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Infrastructure\\IRepository.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Infrastructure\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Infrastructure\\IRepository.cs",
+              "RelativeToolTip": "FOOD.DATA\\Infrastructure\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T07:42:46.034Z",
+              "WhenOpened": "2025-10-19T12:44:59.339Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "FOOD.DATA\\Entites\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Entites\\BaseEntity.cs",
-              "RelativeToolTip": "FOOD.DATA\\Entites\\BaseEntity.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 25,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Infrastructure\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Infrastructure\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Infrastructure\\UnitOfWork.cs",
+              "RelativeToolTip": "FOOD.DATA\\Infrastructure\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T07:42:41.259Z",
+              "WhenOpened": "2025-10-19T12:02:57.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Infrastructure\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Infrastructure\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Infrastructure\\IUnitOfWork.cs",
+              "RelativeToolTip": "FOOD.DATA\\Infrastructure\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T12:02:59.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20251021054113_initial1.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Migrations\\20251021054113_initial1.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Migrations\\20251021054113_initial1.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Migrations\\20251021054113_initial1.cs",
+              "RelativeToolTip": "FOOD.DATA\\Migrations\\20251021054113_initial1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T05:41:13.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Infrastructure\\Repository.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Infrastructure\\Repository.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Infrastructure\\Repository.cs",
+              "RelativeToolTip": "FOOD.DATA\\Infrastructure\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T12:02:54.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "FOOD.SERVICES",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.SERVICES\\FOOD.SERVICES.csproj",
+              "RelativeDocumentMoniker": "FOOD.SERVICES\\FOOD.SERVICES.csproj",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.SERVICES\\FOOD.SERVICES.csproj",
+              "RelativeToolTip": "FOOD.SERVICES\\FOOD.SERVICES.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-19T13:19:43.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "FOOD.MODEL.csproj",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.MODEL\\FOOD.MODEL.csproj",
+              "RelativeDocumentMoniker": "FOOD.MODEL\\FOOD.MODEL.csproj",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.MODEL\\FOOD.MODEL.csproj",
+              "RelativeToolTip": "FOOD.MODEL\\FOOD.MODEL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-19T13:09:21.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\Food Management System\\appsettings.json",
+              "RelativeDocumentMoniker": "Food Management System\\appsettings.json",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\Food Management System\\appsettings.json",
+              "RelativeToolTip": "Food Management System\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-19T07:53:21.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20251019075153_newrepo.cs",
+              "DocumentMoniker": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Migrations\\20251019075153_newrepo.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Migrations\\20251019075153_newrepo.cs",
+              "ToolTip": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.DATA\\Migrations\\20251019075153_newrepo.cs",
+              "RelativeToolTip": "FOOD.DATA\\Migrations\\20251019075153_newrepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T07:51:53.666Z",
               "EditorCaption": ""
             }
           ]

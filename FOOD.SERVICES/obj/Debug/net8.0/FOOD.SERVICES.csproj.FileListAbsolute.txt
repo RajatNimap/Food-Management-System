@@ -21,3 +21,9 @@ C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.SERVICES\
 C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.SERVICES\obj\Debug\net8.0\refint\FOOD.SERVICES.dll
 C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.SERVICES\obj\Debug\net8.0\FOOD.SERVICES.pdb
 C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.SERVICES\obj\Debug\net8.0\ref\FOOD.SERVICES.dll
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.SERVICES\bin\Debug\net8.0\FOOD.DATA.dll
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.SERVICES\bin\Debug\net8.0\FOOD.MODEL.dll
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.SERVICES\bin\Debug\net8.0\FOOD.DATA.pdb
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.SERVICES\bin\Debug\net8.0\FOOD.MODEL.pdb
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.SERVICES\obj\Debug\net8.0\FOOD.SERVICES.csproj.AssemblyReference.cache
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.SERVICES\obj\Debug\net8.0\FOOD.SER.5790CD50.Up2Date

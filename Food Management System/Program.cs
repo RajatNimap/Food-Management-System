@@ -1,5 +1,8 @@
 using FOOD.DATA;
 using FOOD.DATA.Infrastructure;
+using FOOD.SERVICES.AuthenticationServices;
+using FOOD.SERVICES.Mapping;
+using FOOD.SERVICES.UserServices;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -28,7 +31,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         ValidAudience = builder.Configuration["Jwt:Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
     });
-builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));    
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddScoped<IUserServices, UserServices>();
+builder.Services.AddScoped<IAuth, Auth>();  
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

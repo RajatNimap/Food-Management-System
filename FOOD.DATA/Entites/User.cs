@@ -9,15 +9,15 @@ namespace FOOD.DATA.Entites
 {
     public class User:BaseEntity
     {
-        [Required]
+        
         public string Name { get; set; }
-        [Required]
-        [EmailAddress]
+      
         public string Email { get; set; }
-        [Required]
+        
         public string Password { get; set; }
-        [Required]
+    
         public Role Role { get; set; }
-        public string IsActive { get; set; }
+        public bool Active { get; set; }
+        public ICollection<Orders> Orders { get; set; } = new List<Orders>();
     }
 }
