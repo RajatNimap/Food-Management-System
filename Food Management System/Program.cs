@@ -11,6 +11,7 @@ using FOOD.SERVICES.Mapping;
 using FOOD.SERVICES.MenuServices;
 using FOOD.SERVICES.OrderServices;
 using FOOD.SERVICES.RecipeServices;
+using FOOD.SERVICES.Reports;
 using FOOD.SERVICES.UserServices;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
@@ -52,7 +53,6 @@ builder.Services.AddScoped<IInventoryRepository, InventoryRepository>();
 builder.Services.AddScoped<IMenuRepository, MenuRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IRecipeRepository, RecipeRepository>();
-
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddScoped<IUserServices, UserServices>();
@@ -60,6 +60,7 @@ builder.Services.AddScoped<IInventoryService, InventoryService>();
 builder.Services.AddScoped<IMenuService, MenuService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IRecipeService, RecipeService>();
+builder.Services.AddScoped<IDailyOrderReport, DailyOrderReport>();  
 builder.Services.AddScoped<IAuth, Auth>();  
 var app = builder.Build();
 

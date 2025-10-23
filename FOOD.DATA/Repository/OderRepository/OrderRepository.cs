@@ -116,6 +116,17 @@ namespace FOOD.DATA.Repository.OderRepository
                 .FirstOrDefaultAsync(m => m.Id == menuId);  
         }
 
+        public async Task<IEnumerable<Orders>> GetMenuWithRecipesDateTime(DateOnly date)
+        {
+            var start = date.ToDateTime(TimeOnly.MinValue);
+            var nextDay = start.AddDays(1);
+
+            var utcStart = TimeZoneInfo.ConvertTimeToUtc(start);
+            var utcNextDay = TimeZoneInfo.ConvertTimeToUtc(nextDay);
+            return await dbcontext.orders.Include(x => x.OrderItems).ThenInclude(y => y.Menu)
+                .Where(o => o.CreatedDate >= utcStart && o.CreatedDate < utcNextDay).ToListAsync();
+        }
+
         public async Task UpdateInventory(Inventory inventory)
         {
               dbcontext.inventories.Update(inventory);

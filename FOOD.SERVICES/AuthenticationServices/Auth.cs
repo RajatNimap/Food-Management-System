@@ -37,9 +37,9 @@ namespace FOOD.SERVICES.AuthenticationServices
             var verifyCredential = BCrypt.Net.BCrypt.Verify(login.Password, user.Password);
           
               if(verifyCredential == false)
-               {
+              {
                 return string.Empty;
-               }
+              }
          
 
             return GenerateToken(user);
@@ -66,7 +66,7 @@ namespace FOOD.SERVICES.AuthenticationServices
                 expires: DateTime.UtcNow.AddHours(3),
                 signingCredentials: Credential
 
-              );
+            );
 
 
             return new JwtSecurityTokenHandler().WriteToken(Token);

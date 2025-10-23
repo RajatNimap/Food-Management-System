@@ -784,6 +784,10 @@
       "OrdersModel": {
         "type": "object",
         "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
           "customerName": {
             "type": "string",
             "nullable": true

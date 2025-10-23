@@ -12,8 +12,8 @@ namespace FOOD.DATA.Repository.OderRepository
     {
       //  public Task<OrderCreatedResult> CreateOrders(Orders model);
 
-        public Task<Menu?> GetMenuWithRecipesAsync(int menuId);  
-        
+        public Task<Menu?> GetMenuWithRecipesAsync(int menuId); 
+        public Task<IEnumerable<Orders>> GetMenuWithRecipesDateTime(DateOnly date);   
         public Task UpdateInventory(Inventory inventory);  
     }
 
