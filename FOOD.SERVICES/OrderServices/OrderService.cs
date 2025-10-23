@@ -53,7 +53,7 @@ namespace FOOD.SERVICES.OrderServices
             }
         }
 
-        public async Task<bool> CreateOrderAsync(OrdersModel orderModel)
+        public async Task<bool> UpdateOrder(OrdersModel orderModel)
         {
             try
             {
@@ -118,93 +118,90 @@ namespace FOOD.SERVICES.OrderServices
                 throw new Exception($"Error occurred while deleting order with ID {id}", ex);
             }
         }
-
-        public Task<OrderCreatedResult> PlacingOrder(Orders order)
+        public async Task<OrderCreatedResult> PlacingOrder(OrdersModel order)
         {
             try
             {
-                using (var transaction = awai  _unitOfWork.BeginTransactionAsync())
-                {
-
+                    bool IsMoveFuther = true;
                     decimal totalAmt = 0;
                     var shortageItems = new List<ShortageItem>();
 
                     foreach (var orderItem in order.OrderItems)
                     {
 
-                        var menu = await dbcontext.menus.Include(x => x.Recipes).ThenInclude(y => y.Inventory).FirstOrDefaultAsync(x => x.Id == orderItem.MenuId);
-                        if (menu == null)
-                        {
+                         var menu = await _unitOfWork.OrderRepository.GetMenuWithRecipesAsync(orderItem.MenuId);
+                         if (menu == null)
+                         {
                             throw new ArgumentException($"Menu with ID {orderItem.MenuId} not found");
-                        }
+                         }
                         foreach (var item in menu.Recipes)
                         {
-                            //  var inventory = await dbcontext.inventories.FirstOrDefaultAsync(x => x.Id == item.ItemId);
                             var inventory = item.Inventory;
                             if (inventory == null)
                             {
                                 throw new ArgumentException($"Inventory item with ID {item.ItemId} not found");
 
                             }
-                            decimal requiredquantity = item.QuantityRequired * orderItem.QuantityOrdered;
-                            if (inventory.QuantityAvailable < requiredquantity)
-                            {
+                                 decimal requiredquantity = item.QuantityRequired * orderItem.QuantityOrdered;
+                                 if (inventory.QuantityAvailable < requiredquantity)
+                                 {
+                                    IsMoveFuther = false;
 
-                                shortageItems.Add(new ShortageItem
-                                {
-                                    ItemId = inventory.Id,
-                                    ItemName = inventory.ItemName,
-                                    RequiredQuantity = requiredquantity,
-                                    AvailableQuantity = inventory.QuantityAvailable,
-                                    ShortageQuantity = requiredquantity - inventory.QuantityAvailable,
-                                    MenuId = menu.Id,
-                                    MenuName = menu.MenuName
-                                });
+                                    shortageItems.Add(new ShortageItem
+                                    {
+                                        ItemId = inventory.Id,
+                                        ItemName = inventory.ItemName,
+                                        RequiredQuantity = requiredquantity,
+                                        AvailableQuantity = inventory.QuantityAvailable,
+                                        ShortageQuantity = requiredquantity - inventory.QuantityAvailable,
+                                        MenuId = menu.Id,
+                                        MenuName = menu.MenuName
+                                    });
+                                 }
+                            if (IsMoveFuther)
+                            {
+                                inventory.QuantityAvailable -= requiredquantity;
+                                _unitOfWork.InventoryRepository.Update(inventory);
                             }
+                        
 
                         }
-                        if (shortageItems.Any())
-                        {
-                            await transaction.RollbackAsync();
-                            return new OrderCreatedResult
-                            {
-                                IsSuccess = false,
-                                Message = "Insuffcient inventory for some item",
-                                ShortageItems = shortageItems
-                            };
 
-                        }
-                        foreach (var recipe in menu.Recipes)
-                        {
-
-                            var inventory = recipe.Inventory;
-                            decimal requiredquantity = recipe.QuantityRequired * orderItem.QuantityOrdered;
-                            inventory.QuantityAvailable -= requiredquantity;
-                            dbcontext.inventories.Update(inventory);
-
-                        }
-                        await dbcontext.orderItems.AddAsync(orderItem);
-                        totalAmt += (orderItem.UnitPrice * orderItem.QuantityOrdered);
+                         //await _unitOfWork.orderItems.AddAsync(orderItem);
+                        if (IsMoveFuther)
+                                totalAmt += (orderItem.UnitPrice * orderItem.QuantityOrdered);
                     }
+
+                if (shortageItems.Any())
+                {
+                    return new OrderCreatedResult
+                    {
+                        IsSuccess = false,
+                        Message = "Insuffcient inventory for some item",
+                        ShortageItems = _mapper.Map<List<ShortageItem>>(shortageItems)
+                    };
+
+                }
+                else
+                {
                     order.TotalAmount = totalAmt;
-                    await dbcontext.orders.AddAsync(order);
-                    await dbcontext.SaveChangesAsync();
-                    await transaction.CommitAsync();
+                    var MappedOrder = _mapper.Map<Orders>(order);
+                    await _unitOfWork.OrderRepository.Add(MappedOrder);
+                    await _unitOfWork.Commit();
 
                     return new OrderCreatedResult
                     {
                         IsSuccess = true,
                         Message = "Order created successfully",
-                        OrderId = order.Id,
+                        OrderId = MappedOrder.Id,
                         order = order,
-                        ShortageItems = new List<ShortageItem>()
                     };
                 }
-
+                
             }
             catch (Exception ex)
             {
-
+    
                 throw new Exception("Error occurred while creating order", ex);
 
             }

@@ -10,9 +10,9 @@ namespace FOOD.MODEL.Model
     {
         public int RecipeId { get; set; }
         public int MenuId { get; set; }  
-        public MenuModel Menu { get; set; }  
+      //  public MenuModel Menu { get; set; }  
         public int ItemId { get; set; }
-        public InventoryModel InventoryModel { get; set; }  
+        //public InventoryModel InventoryModel { get; set; }  
         public decimal QuantityRequired { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
     }

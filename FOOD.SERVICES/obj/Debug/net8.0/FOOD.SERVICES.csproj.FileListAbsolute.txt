@@ -27,3 +27,10 @@ C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.SERVICES\
 C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.SERVICES\bin\Debug\net8.0\FOOD.MODEL.pdb
 C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.SERVICES\obj\Debug\net8.0\FOOD.SERVICES.csproj.AssemblyReference.cache
 C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.SERVICES\obj\Debug\net8.0\FOOD.SER.5790CD50.Up2Date
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\FOOD.SERVICES\obj\Debug\net8.0\FOOD.SERVICES.csproj.AssemblyReference.cache
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\FOOD.SERVICES\obj\Debug\net8.0\FOOD.SERVICES.sourcelink.json
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\FOOD.SERVICES\bin\Debug\net8.0\FOOD.DATA.dll
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\FOOD.SERVICES\bin\Debug\net8.0\FOOD.MODEL.dll
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\FOOD.SERVICES\bin\Debug\net8.0\FOOD.DATA.pdb
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\FOOD.SERVICES\bin\Debug\net8.0\FOOD.MODEL.pdb
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\FOOD.SERVICES\obj\Debug\net8.0\FOOD.SER.5790CD50.Up2Date

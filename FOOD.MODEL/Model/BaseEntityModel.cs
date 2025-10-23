@@ -11,13 +11,13 @@ namespace FOOD.MODEL.Model
     {
         
        [JsonIgnore]
-        public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
+        public DateTime? CreatedDate { get; set; } = DateTime.UtcNow;
         [JsonIgnore]
-        public DateTime ModifiedDate { get;set; } 
+        public DateTime? ModifiedDate { get; set; } = DateTime.UtcNow;
         [JsonIgnore]
-        public string CreatedBy { get; set; }
+        public string? CreatedBy { get; set; }
         [JsonIgnore]
-        public string ModifiedBy { get; set; }    
+        public string? ModifiedBy { get; set; }    
 
     }
 }

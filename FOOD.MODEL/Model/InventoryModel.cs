@@ -12,7 +12,7 @@ namespace FOOD.MODEL.Model
         public string Unit { get; set; }
         public decimal QuantityAvailable { get; set; }
         public decimal ReorderLevel { get; set; }  
-        public ICollection<RecipeModel> Recipes { get; set; } = new List<RecipeModel>();
+        //public ICollection<RecipeModel> Recipes { get; set; } = new List<RecipeModel>();
 
     }
 }

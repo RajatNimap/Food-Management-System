@@ -15,8 +15,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\FOOD.MODEL\FOOD.MODEL.csproj" />
-  </ItemGroup>
-
 </Project>

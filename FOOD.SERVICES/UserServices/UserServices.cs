@@ -26,7 +26,8 @@ namespace FOOD.SERVICES.UserServices
             {
                 user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
                 user.CreatedDate = DateTime.UtcNow;
-                user.CreatedBy = user.Name;
+                user.CreatedBy = "admin";
+                user.ModifiedBy = "admin";
 
                 var UserEntity = _mapper.Map<User>(user);
                 await unitOfWork.UserRepository.Add(UserEntity);

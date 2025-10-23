@@ -10,11 +10,11 @@ namespace FFOOD.MODEL.Model
 {
     public class OrderItemsModel : BaseEntityModel
     {
-        public int OrderDetailId { get; set; }
-        public int OrderId { get; set; }
-        public OrdersModel Order { get; set; }  
+      //  public int OrderDetailId { get; set; }
+       // public int OrderId { get; set; }
+      //  public OrdersModel Order { get; set; }  
         public int MenuId { get; set; }
-        public MenuModel Menu { get; set; }
+      //  public MenuModel Menu { get; set; }
         public int QuantityOrdered { get; set; }  
         public decimal UnitPrice { get; set; }
     }

@@ -19,12 +19,12 @@ namespace FOOD.SERVICES.RecipeServices
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<RecipeModel>> GetAllRecipesAsync()
+        public async Task<IEnumerable<Recipe>> GetAllRecipesAsync()
         {
             try
             {
                 var recipes = await _unitOfWork.RecipeRepository.GetAll();
-                return _mapper.Map<IEnumerable<RecipeModel>>(recipes);
+                return recipes;
             }
             catch (Exception ex)
             {
@@ -32,7 +32,7 @@ namespace FOOD.SERVICES.RecipeServices
             }
         }
 
-        public async Task<RecipeModel> GetRecipeByIdAsync(int id)
+        public async Task<Recipe> GetRecipeByIdAsync(int id)
         {
             try
             {
@@ -40,7 +40,7 @@ namespace FOOD.SERVICES.RecipeServices
                 if (recipe == null)
                     throw new KeyNotFoundException($"Recipe with ID {id} not found");
 
-                return _mapper.Map<RecipeModel>(recipe);
+                return recipe;
             }
             catch (KeyNotFoundException)
             {

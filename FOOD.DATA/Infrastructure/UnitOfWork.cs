@@ -14,61 +14,37 @@ namespace FOOD.DATA.Infrastructure
 {
     public class UnitOfWork : IUnitOfWork
     {
-       //public IUserRepository UserRepository { get; }
-        private DataContext dbcontext; 
-        private IUserRepository userRepository;
-        private IInventoryRepository inventoryRepository;
-        private IMenuRepository menuRepository;
-        private IOrderRepository orderRepository;
-        private IRecipeRepository recipeRepository;
-       public UnitOfWork(DataContext _dbcontext)
-       {
-           // UserRepository = userepo;
-            dbcontext=_dbcontext;
-       }
-                
-        public IUserRepository UserRepository { 
+        private readonly DataContext _dbContext;
+        public IUserRepository UserRepository { get; }
+        public IInventoryRepository InventoryRepository { get; }
+        public IMenuRepository MenuRepository { get; }
+        public IOrderRepository OrderRepository { get; }
+        public IRecipeRepository RecipeRepository { get; }
 
-            get{ 
-                
-                return userRepository = userRepository ?? new UserRepository(dbcontext);
-            } 
-        }    
-        public IInventoryRepository InventoryRepository
+        public UnitOfWork(
+            DataContext dbContext,
+            IUserRepository userRepository,
+            IInventoryRepository inventoryRepository,
+            IMenuRepository menuRepository,
+            IOrderRepository orderRepository,
+            IRecipeRepository recipeRepository)
         {
-            get
-            {
-                    return inventoryRepository ?? new InventoryRepository(dbcontext);   
-            }
+            _dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
+            UserRepository = userRepository ?? throw new ArgumentNullException(nameof(userRepository));
+            InventoryRepository = inventoryRepository ?? throw new ArgumentNullException(nameof(inventoryRepository));
+            MenuRepository = menuRepository ?? throw new ArgumentNullException(nameof(menuRepository));
+            OrderRepository = orderRepository ?? throw new ArgumentNullException(nameof(orderRepository));
+            RecipeRepository = recipeRepository ?? throw new ArgumentNullException(nameof(recipeRepository));
         }
 
-        public IMenuRepository MenuRepository
-        {
-            get
-            {
-                 return menuRepository ?? new MenuRepository(dbcontext);        
-            }
-        }
-
-        public IOrderRepository OrderRepository
-        {
-
-            get
-            {
-                return orderRepository ?? new OrderRepository(dbcontext);   
-            }
-        }
-
-        public IRecipeRepository RecipeRepository
-        {
-            get {
-
-                return recipeRepository ?? new RecipeRepository(dbcontext);
-            }
-        }
         public async Task<int> Commit()
         {
-            return await dbcontext.SaveChangesAsync();
+            return await _dbContext.SaveChangesAsync();
+        }
+
+        public void Dispose()
+        {
+            _dbContext?.Dispose();
         }
     }
 }

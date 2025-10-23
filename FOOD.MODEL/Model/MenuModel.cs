@@ -14,8 +14,8 @@ namespace FOOD.MODEL.Model
         public decimal Price { get; set; }
         public string Description { get; set; }
         public bool IsAvailable { get; set; } 
-        public ICollection<RecipeModel> Recipes { get; set; } = new List<RecipeModel>();
-        public ICollection<OrderItemsModel> OrderItems { get; set; } = new List<OrderItemsModel>();
+        //public ICollection<RecipeModel> Recipes { get; set; } = new List<RecipeModel>();
+        //public ICollection<OrderItemsModel> OrderItems { get; set; } = new List<OrderItemsModel>();
     }
 }
 

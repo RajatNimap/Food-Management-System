@@ -20,16 +20,16 @@ namespace FOOD.SERVICES.MenuServices
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<MenuModel>> GetAllMenusAsync()
+        public async Task<IEnumerable<Menu>> GetAllMenusAsync()
         {
             var menus = await _unitOfWork.MenuRepository.GetAll();
-            return _mapper.Map<IEnumerable<MenuModel>>(menus);
+            return menus;
         }
 
-        public async Task<MenuModel> GetMenuByIdAsync(int id)
+        public async Task<Menu> GetMenuByIdAsync(int id)
         {
             var menu = await _unitOfWork.MenuRepository.GetById(id);
-            return _mapper.Map<MenuModel>(menu);
+            return menu;
         }
 
         public async Task<bool> CreateMenuAsync(MenuModel menuModel)

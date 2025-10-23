@@ -354,3 +354,11 @@ C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\Food Managemen
 C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\Food Management System\bin\Debug\net8.0\FOOD.SERVICES.pdb
 C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\Food Management System\bin\Debug\net8.0\FOOD.MODEL.pdb
 C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\Food Management System\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Management System\obj\Debug\net8.0\Food Management System.sourcelink.json
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Management System\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Management System\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Management System\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Management System\bin\Debug\net8.0\FOOD.MODEL.dll
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Management System\bin\Debug\net8.0\FOOD.SERVICES.dll
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Management System\bin\Debug\net8.0\FOOD.SERVICES.pdb
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Management System\bin\Debug\net8.0\FOOD.MODEL.pdb

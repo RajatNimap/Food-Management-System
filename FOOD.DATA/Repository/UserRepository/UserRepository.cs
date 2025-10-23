@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using FOOD.DATA.Entites;
 using FOOD.DATA.Infrastructure;
-using FOOD.MODEL.Model;
 using Microsoft.EntityFrameworkCore;
 
 namespace FOOD.DATA.Repository.UserRepository

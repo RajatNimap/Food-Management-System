@@ -9,9 +9,9 @@ namespace FOOD.SERVICES.OrderServices
     {
         Task<IEnumerable<OrdersModel>> GetAllOrdersAsync();
         Task<OrdersModel> GetOrderByIdAsync(int id);
-        Task<bool> CreateOrderAsync(OrdersModel orderModel);
+        Task<bool> UpdateOrder(OrdersModel orderModel);
         Task<bool> UpdateOrderAsync(int id, OrdersModel orderModel);
         Task<bool> DeleteOrderAsync(int id);
-        Task<OrderCreatedResult> PlacingOrder(Orders order);   
+        Task<OrderCreatedResult> PlacingOrder(OrdersModel order);   
     }
 }
