@@ -10,5 +10,9 @@ namespace FOOD.DATA.Repository.InventoryRepository
 {
     public interface IInventoryRepository:IRepository<Inventory>
     {
+        Task<IEnumerable<Inventory>> GetLowStockItems();
+        Task<IEnumerable<Inventory>> GetItemsBelowQuantity(decimal quantity);   
+        Task<bool> IstheItemLowStock(int itemId);
+
     }
 }

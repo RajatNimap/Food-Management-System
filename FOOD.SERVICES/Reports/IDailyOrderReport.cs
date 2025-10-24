@@ -10,5 +10,6 @@ namespace FOOD.SERVICES.Reports
     public interface IDailyOrderReport
     {
         public Task<DailyReportModel> DailyReport(DateOnly reportDate); 
+      
     }
 }

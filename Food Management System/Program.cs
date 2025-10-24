@@ -11,12 +11,14 @@ using FOOD.SERVICES.Mapping;
 using FOOD.SERVICES.MenuServices;
 using FOOD.SERVICES.OrderServices;
 using FOOD.SERVICES.RecipeServices;
+using FOOD.SERVICES.ReportExport;
 using FOOD.SERVICES.Reports;
 using FOOD.SERVICES.UserServices;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using OfficeOpenXml;
 using System.Text;
 using System.Text.Json.Serialization;
 
@@ -61,7 +63,11 @@ builder.Services.AddScoped<IMenuService, MenuService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IRecipeService, RecipeService>();
 builder.Services.AddScoped<IDailyOrderReport, DailyOrderReport>();  
-builder.Services.AddScoped<IAuth, Auth>();  
+builder.Services.AddScoped<ILowStockReports, LowStockReports>();
+builder.Services.AddScoped<IDailyReportExcel, DailyReportExcel>();
+builder.Services.AddScoped<IAuth, Auth>();
+
+ExcelPackage.License.SetNonCommercialOrganization("My Noncommercial organization");
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

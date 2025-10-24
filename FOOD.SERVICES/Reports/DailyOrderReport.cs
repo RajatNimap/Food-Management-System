@@ -16,10 +16,7 @@ namespace FOOD.SERVICES.Reports
             _unitOfWork = unitOfWork;
         }
 
-        public Task<DailyReportModel> DailyReport(DateTime reportDate)
-        {
-            throw new NotImplementedException();
-        }
+    
         public async Task<DailyReportModel> DailyReport(DateOnly reportDate)
         {
             try

@@ -167,7 +167,6 @@ namespace FOOD.SERVICES.OrderServices
 
                         }
 
-                         //await _unitOfWork.orderItems.AddAsync(orderItem);
                         if (IsMoveFuther)
                                 totalAmt += (orderItem.UnitPrice * orderItem.QuantityOrdered);
                     }

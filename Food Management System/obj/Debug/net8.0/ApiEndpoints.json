@@ -348,6 +348,48 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Food_Management_System.Controllers.ReportController",
+    "Method": "Report",
+    "RelativePath": "api/Report",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "date",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Food_Management_System.Controllers.ReportController",
+    "Method": "LowStockReport",
+    "RelativePath": "api/Report/LowStockReport",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Food_Management_System.Controllers.ReportController",
+    "Method": "DownloadReport",
+    "RelativePath": "api/Report/report",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reportDate",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Food_Management_System.Controllers.UserController",
     "Method": "GetAllUser",
     "RelativePath": "api/User",

@@ -16,6 +16,7 @@ namespace FOOD.MODEL.Model
         public string CustomerName { get; set; }
         public string CustomerEmail { get; set; }
         public string Address { get; set; }
+        [JsonIgnore]
         public decimal TotalAmount { get; set; }
         public ICollection<OrderItemsModel> OrderItems { get; set; } = new List<OrderItemsModel>();
     }

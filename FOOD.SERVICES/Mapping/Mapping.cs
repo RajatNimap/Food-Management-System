@@ -7,6 +7,7 @@ using AutoMapper;
 using FFOOD.MODEL.Model;
 using FOOD.DATA.Entites;
 using FOOD.MODEL.Model;
+using FOOD.MODEL.ReportModel;
 
 namespace FOOD.SERVICES.Mapping
 {
@@ -22,6 +23,7 @@ namespace FOOD.SERVICES.Mapping
             CreateMap<Inventory, InventoryModel>().ReverseMap();
             CreateMap<Menu, MenuModel>().ReverseMap();
             CreateMap<Recipe, RecipeModel>().ReverseMap();
+            CreateMap<Inventory,InverntoryReportModel>().ReverseMap(); 
         }
 
     }
