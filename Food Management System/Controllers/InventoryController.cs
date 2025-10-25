@@ -1,6 +1,7 @@
 ﻿using FOOD.DATA.Entites;
 using FOOD.MODEL.Model;
 using FOOD.SERVICES.Inventery;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,6 +19,7 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles ="Admin")]
         public async Task<IActionResult> GetAllInventory()
         {
             var inventoryItems = await _inventoryService.GetAllInventory();
@@ -25,6 +27,7 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetSingleInventory(int id)
         {
             var inventory = await _inventoryService.GetSinglInventory(id);
@@ -32,6 +35,7 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> AddInventory(InventoryModel model)
         {
             var result = await _inventoryService.AddInventory(model);
@@ -42,6 +46,7 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateInventory(int id, InventoryModel model)
         {
             var result = await _inventoryService.UpdateInventory(id, model);
@@ -52,6 +57,7 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteInventory(int id)
         {
             var result = await _inventoryService.DeleteInventory(id);

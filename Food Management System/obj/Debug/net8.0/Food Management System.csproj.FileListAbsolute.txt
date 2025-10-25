@@ -370,3 +370,9 @@ C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Manage
 C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Management System\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Management System\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
 C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Management System\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Management System\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Management System\bin\Debug\net8.0\MailKit.dll
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Management System\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Management System\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Management System\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Nimap\Desktop\Food Management System\Food Management System\Food Management System\bin\Debug\net8.0\MimeKit.dll

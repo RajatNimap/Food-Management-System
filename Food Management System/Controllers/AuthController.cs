@@ -1,5 +1,6 @@
 ﻿using FOOD.MODEL.Model;
 using FOOD.SERVICES.AuthenticationServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,6 +17,7 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Login(LoginModel login)
         {
             var token = await auth.IsAuthenticated(login);

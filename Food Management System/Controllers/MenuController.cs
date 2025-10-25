@@ -1,5 +1,6 @@
 ﻿using FOOD.MODEL.Model;
 using FOOD.SERVICES.MenuServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,6 +18,7 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin,Cashier")]
         public async Task<IActionResult> GetAllMenus()
         {
             var menus = await _menuService.GetAllMenusAsync();
@@ -24,6 +26,7 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin,Cashier")]
         public async Task<IActionResult> GetMenuById(int id)
         {
             var menu = await _menuService.GetMenuByIdAsync(id);
@@ -31,6 +34,7 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CreateMenu(MenuModel model)
         {
             var result = await _menuService.CreateMenuAsync(model);
@@ -41,6 +45,7 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateMenu(int id, MenuModel model)
         {
             var result = await _menuService.UpdateMenuAsync(id, model);
@@ -51,6 +56,7 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteMenu(int id)
         {
             var result = await _menuService.DeleteMenuAsync(id);

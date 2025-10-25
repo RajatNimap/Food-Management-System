@@ -5,6 +5,7 @@ using AutoMapper;
 using FOOD.DATA.Entites;
 using FOOD.DATA.Infrastructure;
 using FOOD.MODEL.Model;
+using FOOD.SERVICES.MailServices;
 using Microsoft.EntityFrameworkCore;
 
 namespace FOOD.SERVICES.OrderServices
@@ -13,11 +14,13 @@ namespace FOOD.SERVICES.OrderServices
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
+        private readonly IEmailServices _emailServices;
 
-        public OrderService(IUnitOfWork unitOfWork, IMapper mapper)
+        public OrderService(IUnitOfWork unitOfWork, IMapper mapper,IEmailServices emailServices)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
+            _emailServices = emailServices;
         }
 
         public async Task<IEnumerable<OrdersModel>> GetAllOrdersAsync()
@@ -195,6 +198,8 @@ namespace FOOD.SERVICES.OrderServices
                         OrderId = MappedOrder.Id,
                         order = order,
                     };
+
+
                 }
                 
             }

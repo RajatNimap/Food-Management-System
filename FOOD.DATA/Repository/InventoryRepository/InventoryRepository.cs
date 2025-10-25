@@ -17,20 +17,20 @@ namespace FOOD.DATA.Repository.InventoryRepository
             this.dbcontext = dbcontext;
         }
 
-        public async Task<IEnumerable<Inventory>> GetItemsBelowQuantity(decimal quantity)
+        public async Task<List<Inventory>> GetItemsBelowQuantity(decimal quantity)
         {
-            return await dbcontext.inventories.Where(x => x.QuantityAvailable < quantity).ToListAsync();  
+            return await dbcontext.inventories.AsNoTracking().Where(x => x.QuantityAvailable < quantity).ToListAsync();  
         }
 
-        public async Task<IEnumerable<Inventory>> GetLowStockItems()
+        public async Task<List<Inventory>> GetLowStockItems()
         {
-           return await dbcontext.inventories.Where(x => x.QuantityAvailable < x.ReorderLevel)
+           return await dbcontext.inventories.AsNoTracking().Where(x => x.QuantityAvailable < x.ReorderLevel)
           .OrderBy(x=>x.QuantityAvailable).ToListAsync();
         }
 
         public async Task<bool> IstheItemLowStock(int itemId)
         {
-            var data= await dbcontext.inventories.FirstOrDefaultAsync(x => x.Id == itemId);
+            var data= await dbcontext.inventories.AsNoTracking().FirstOrDefaultAsync(x => x.Id == itemId);
             return data?.QuantityAvailable < data?.ReorderLevel ? true : false;
         }
     }

@@ -1,5 +1,6 @@
 ﻿using FOOD.MODEL.Model;
 using FOOD.SERVICES.RecipeServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,13 +18,15 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllRecipes()
         {
             var recipes = await _recipeService.GetAllRecipesAsync();
             return Ok(recipes);
         }
-
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> GetRecipeById(int id)
         {
             var recipe = await _recipeService.GetRecipeByIdAsync(id);
@@ -31,6 +34,8 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> CreateRecipe(RecipeModel model)
         {
             var result = await _recipeService.CreateRecipeAsync(model);
@@ -41,6 +46,8 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> UpdateRecipe(int id, RecipeModel model)
         {
             var result = await _recipeService.UpdateRecipeAsync(id, model);
@@ -51,6 +58,7 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteRecipe(int id)
         {
             var result = await _recipeService.DeleteRecipeAsync(id);

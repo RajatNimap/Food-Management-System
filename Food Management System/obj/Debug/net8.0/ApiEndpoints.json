@@ -365,18 +365,8 @@
   },
   {
     "ContainingType": "Food_Management_System.Controllers.ReportController",
-    "Method": "LowStockReport",
-    "RelativePath": "api/Report/LowStockReport",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Food_Management_System.Controllers.ReportController",
     "Method": "DownloadReport",
-    "RelativePath": "api/Report/report",
+    "RelativePath": "api/Report/DailyReport",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -387,6 +377,26 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Food_Management_System.Controllers.ReportController",
+    "Method": "LowStockExcel",
+    "RelativePath": "api/Report/LowStockExcel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Food_Management_System.Controllers.ReportController",
+    "Method": "LowStockReport",
+    "RelativePath": "api/Report/LowStockReport",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

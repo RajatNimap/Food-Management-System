@@ -10,6 +10,7 @@ namespace FOOD.MODEL.Model
 {
     public class OrdersModel : BaseEntityModel
     {
+        [JsonIgnore]
         public int UserId { get; set; }
         [JsonIgnore]
         public UserModel? Usermodel { get; set; }

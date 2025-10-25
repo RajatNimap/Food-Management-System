@@ -11,6 +11,5 @@ namespace FOOD.SERVICES.Reports
     {
 
         public Task<LowStockReportModel> GetLowStockReport();
-        public Task<IEnumerable<InverntoryReportModel>> GetLowStockItmes(); 
     }
 }

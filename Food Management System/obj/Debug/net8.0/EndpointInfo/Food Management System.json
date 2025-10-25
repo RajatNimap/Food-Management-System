@@ -601,7 +601,7 @@
         }
       }
     },
-    "/api/Report/report": {
+    "/api/Report/DailyReport": {
       "get": {
         "tags": [
           "Report"
@@ -615,6 +615,18 @@
               "format": "date"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Report/LowStockExcel": {
+      "get": {
+        "tags": [
+          "Report"
         ],
         "responses": {
           "200": {
@@ -894,11 +906,10 @@
       },
       "Role": {
         "enum": [
-          0,
-          1
+          "Admin",
+          "Cashier"
         ],
-        "type": "integer",
-        "format": "int32"
+        "type": "string"
       },
       "UserModel": {
         "required": [

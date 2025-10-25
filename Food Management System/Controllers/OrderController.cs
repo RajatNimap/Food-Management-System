@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using FOOD.DATA.Entites;
 using FOOD.MODEL.Model;
+using Microsoft.AspNetCore.Authorization;
 namespace Food_Management_System.Controllers
 {
     [Route("api/[controller]")]
@@ -15,19 +16,23 @@ namespace Food_Management_System.Controllers
             this._orderService = _orderService;
         }
 
+        
         [HttpGet]
+        [Authorize(Roles = "Cashier")]
         public async Task<IActionResult> GetAllOrders()
         {
             var orders = await _orderService.GetAllOrdersAsync();
             return Ok(orders);
         }
         [HttpGet("{id}")]
+        [Authorize(Roles = "Cashier")]
         public async Task<IActionResult> GetOrderById(int id)
         {
             var order = await _orderService.GetOrderByIdAsync(id);
             return Ok(order);
         }
         [HttpPost]
+        [Authorize(Roles = "Cashier")]
         public async Task<IActionResult> CreateOrder(OrdersModel model)
         {
             var result = await _orderService.UpdateOrder(model);
@@ -37,6 +42,7 @@ namespace Food_Management_System.Controllers
                 return BadRequest("Failed to create order");
         }
         [HttpPut("{id}")]
+        [Authorize(Roles = "Cashier")]
         public async Task<IActionResult> UpdateOrder(int id, OrdersModel model)
         {
             var result = await _orderService.UpdateOrder(model);
@@ -45,6 +51,7 @@ namespace Food_Management_System.Controllers
             else
                 return BadRequest("Failed to update order");
         }
+        [Authorize(Roles = "Cashier")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteOrder(int id)
         {
