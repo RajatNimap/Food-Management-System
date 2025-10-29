@@ -16,6 +16,6 @@ namespace FFOOD.MODEL.Model
         public int MenuId { get; set; }
       //  public MenuModel Menu { get; set; }
         public int QuantityOrdered { get; set; }  
-        public decimal UnitPrice { get; set; }
+
     }
 }

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using FOOD.DATA.Entites;
 using FOOD.DATA.Infrastructure;
+using FOOD.MODEL.HelperModel;
 using FOOD.MODEL.Model;
 
 namespace FOOD.SERVICES.MenuServices
@@ -13,11 +14,13 @@ namespace FOOD.SERVICES.MenuServices
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
+        private readonly IUserContext _userContext;
 
-        public MenuService(IUnitOfWork unitOfWork, IMapper mapper)
+        public MenuService(IUnitOfWork unitOfWork, IMapper mapper,IUserContext userContext)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
+            _userContext = userContext;
         }
 
         public async Task<IEnumerable<Menu>> GetAllMenusAsync()
@@ -37,7 +40,7 @@ namespace FOOD.SERVICES.MenuServices
             try
             {
                 menuModel.CreatedDate = DateTime.UtcNow;
-                menuModel.CreatedBy = "System"; 
+                menuModel.CreatedBy = _userContext.GetCurrentUserId(); 
 
                 var menuEntity = _mapper.Map<Menu>(menuModel);
                 await _unitOfWork.MenuRepository.Add(menuEntity);
@@ -62,7 +65,7 @@ namespace FOOD.SERVICES.MenuServices
                 _mapper.Map(menuModel, existingMenu);
 
                 existingMenu.ModifiedDate = DateTime.UtcNow;
-                existingMenu.ModifiedBy = "System"; 
+                existingMenu.ModifiedBy = _userContext.GetCurrentUserId(); 
 
                 var rowsAffected = await _unitOfWork.Commit();
                 return rowsAffected > 0;

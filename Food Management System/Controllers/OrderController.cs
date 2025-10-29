@@ -11,9 +11,9 @@ namespace Food_Management_System.Controllers
     public class OrderController : ControllerBase
     {
         private readonly IOrderService _orderService;
-        public OrderController(IOrderService _orderService)
+        public OrderController(IOrderService orderService)
         {
-            this._orderService = _orderService;
+            _orderService = orderService;
         }
 
         
@@ -31,21 +31,12 @@ namespace Food_Management_System.Controllers
             var order = await _orderService.GetOrderByIdAsync(id);
             return Ok(order);
         }
-        [HttpPost]
-        [Authorize(Roles = "Cashier")]
-        public async Task<IActionResult> CreateOrder(OrdersModel model)
-        {
-            var result = await _orderService.UpdateOrder(model);
-            if (result)
-                return Ok();
-            else
-                return BadRequest("Failed to create order");
-        }
+       
         [HttpPut("{id}")]
         [Authorize(Roles = "Cashier")]
         public async Task<IActionResult> UpdateOrder(int id, OrdersModel model)
         {
-            var result = await _orderService.UpdateOrder(model);
+            var result = await _orderService.UpdateOrderAsync(id,model);
             if (result)
                 return Ok();
             else
@@ -61,7 +52,7 @@ namespace Food_Management_System.Controllers
             else
                 return BadRequest("Failed to delete order");
         }
-
+        [Authorize(Roles = "Cashier")]
         [HttpPost("PlacingOrder")]
         public async Task<IActionResult> PlacingOrder(OrdersModel model)
         {

@@ -19,7 +19,6 @@ namespace FOOD.SERVICES.ReportExport
         {
             try
             {
-
                 using (var pakage = new ExcelPackage())
                 {
                     var ws = pakage.Workbook.Worksheets.Add("Low Stock Report");

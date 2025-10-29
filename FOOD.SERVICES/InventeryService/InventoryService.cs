@@ -33,7 +33,7 @@ namespace FOOD.SERVICES.Inventery
         public async Task<bool> AddInventory(InventoryModel model)
         {
             model.CreatedDate = DateTime.UtcNow;
-            model.CreatedBy = "System"; 
+            model.CreatedBy = null; 
             
             var inventoryEntity = _mapper.Map<Inventory>(model);
             await unitOfWork.InventoryRepository.Add(inventoryEntity);
@@ -51,7 +51,7 @@ namespace FOOD.SERVICES.Inventery
             _mapper.Map(model, existingInventory);
             
             existingInventory.ModifiedDate = DateTime.UtcNow;
-            existingInventory.ModifiedBy = "System"; 
+            existingInventory.ModifiedBy = null; 
             
             var rowsAffected = await unitOfWork.Commit();
             return rowsAffected > 0;

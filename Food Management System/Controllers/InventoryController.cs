@@ -40,7 +40,7 @@ namespace Food_Management_System.Controllers
         {
             var result = await _inventoryService.AddInventory(model);
             if (result)
-                return Ok();
+                return Ok("Inventory Added");
             else
                 return BadRequest("Failed to add inventory item");
         }
@@ -51,7 +51,7 @@ namespace Food_Management_System.Controllers
         {
             var result = await _inventoryService.UpdateInventory(id, model);
             if (result)
-                return Ok();
+                return Ok("Inventory Updated");
             else
                 return BadRequest("Failed to update inventory item");
         }
@@ -62,7 +62,7 @@ namespace Food_Management_System.Controllers
         {
             var result = await _inventoryService.DeleteInventory(id);
             if (result)
-                return Ok();
+                return Ok("Inventory Deleted");
             else
                 return BadRequest("Failed to delete inventory item");
         }

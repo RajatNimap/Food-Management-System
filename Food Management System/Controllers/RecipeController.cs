@@ -40,7 +40,7 @@ namespace Food_Management_System.Controllers
         {
             var result = await _recipeService.CreateRecipeAsync(model);
             if (result)
-                return Ok();
+                return Ok("Recipe Created");
             else
                 return BadRequest("Failed to create recipe");
         }
@@ -52,7 +52,7 @@ namespace Food_Management_System.Controllers
         {
             var result = await _recipeService.UpdateRecipeAsync(id, model);
             if (result)
-                return Ok();
+                return Ok("Recipe Updated");
             else
                 return BadRequest("Failed to update recipe");
         }

@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace FOOD.DATA.Entites
 {
-    public class OrderItems : BaseEntity  
+    public class OrderItems 
     {
-       // public int OrderDetailId { get; set; }
+        public int Id { get; set; }
         public int OrderId { get; set; }
         public Orders Order { get; set; }  
         public int MenuId { get; set; }

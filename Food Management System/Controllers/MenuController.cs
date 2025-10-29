@@ -50,7 +50,7 @@ namespace Food_Management_System.Controllers
         {
             var result = await _menuService.UpdateMenuAsync(id, model);
             if (result)
-                return Ok();
+                return Ok("Menu Created");
             else
                 return BadRequest("Failed to update menu");
         }
@@ -61,7 +61,7 @@ namespace Food_Management_System.Controllers
         {
             var result = await _menuService.DeleteMenuAsync(id);
             if (result)
-                return Ok();
+                return Ok("Menu Updated");
             else
                 return BadRequest("Failed to delete menu");
         }

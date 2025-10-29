@@ -185,22 +185,6 @@
   },
   {
     "ContainingType": "Food_Management_System.Controllers.OrderController",
-    "Method": "CreateOrder",
-    "RelativePath": "api/Order",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "FOOD.MODEL.Model.OrdersModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Food_Management_System.Controllers.OrderController",
     "Method": "GetOrderById",
     "RelativePath": "api/Order/{id}",
     "HttpMethod": "GET",

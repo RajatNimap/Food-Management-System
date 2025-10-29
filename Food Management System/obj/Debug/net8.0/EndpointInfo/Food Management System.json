@@ -1,8 +1,9 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Food Management System",
-    "version": "1.0"
+    "title": "Hospital Management",
+    "description": "API documentation for the Hospital Outpatient Management System",
+    "version": "v1"
   },
   "paths": {
     "/api/Auth": {
@@ -291,35 +292,6 @@
         "tags": [
           "Order"
         ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Order"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/OrdersModel"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/OrdersModel"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/OrdersModel"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK"
@@ -841,10 +813,6 @@
           "quantityOrdered": {
             "type": "integer",
             "format": "int32"
-          },
-          "unitPrice": {
-            "type": "number",
-            "format": "double"
           }
         },
         "additionalProperties": false
@@ -852,10 +820,6 @@
       "OrdersModel": {
         "type": "object",
         "properties": {
-          "userId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "customerName": {
             "type": "string",
             "nullable": true
@@ -935,14 +899,23 @@
           },
           "role": {
             "$ref": "#/components/schemas/Role"
-          },
-          "isActive": {
-            "type": "integer",
-            "format": "int32"
           }
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "JWT Authorization header using the Bearer scheme. Example: 'Bearer {token}'",
+        "name": "Authorization",
+        "in": "header"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

@@ -10,14 +10,14 @@ namespace FOOD.MODEL.Model
     public class BaseEntityModel
     {
         
-       [JsonIgnore]
+        [JsonIgnore]
         public DateTime? CreatedDate { get; set; } = DateTime.UtcNow;
         [JsonIgnore]
         public DateTime? ModifiedDate { get; set; } = DateTime.UtcNow;
         [JsonIgnore]
-        public string? CreatedBy { get; set; }
+        public int? CreatedBy { get; set; }
         [JsonIgnore]
-        public string? ModifiedBy { get; set; }    
+        public int? ModifiedBy { get; set; }    
 
     }
 }

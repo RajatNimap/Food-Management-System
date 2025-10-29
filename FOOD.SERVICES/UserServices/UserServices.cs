@@ -5,7 +5,9 @@ using AutoMapper;
 using FOOD.DATA.Entites;
 using FOOD.DATA.Infrastructure;
 using FOOD.DATA.Repository.UserRepository;
+using FOOD.MODEL.HelperModel;
 using FOOD.MODEL.Model;
+using Microsoft.AspNetCore.Http;
 
 namespace FOOD.SERVICES.UserServices
 {
@@ -13,11 +15,12 @@ namespace FOOD.SERVICES.UserServices
     {
         private readonly IUnitOfWork unitOfWork;
         private readonly IMapper _mapper;
-
-        public UserServices(IUnitOfWork _unit, IMapper mapper)
+        private readonly IUserContext _userContext;
+        public UserServices(IUnitOfWork _unit, IMapper mapper, IUserContext userContext)
         {
             unitOfWork = _unit;
             _mapper = mapper;
+            _userContext = userContext;
         }
 
         public async Task<bool> AddUser(UserModel user)
@@ -26,9 +29,7 @@ namespace FOOD.SERVICES.UserServices
             {
                 user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
                 user.CreatedDate = DateTime.UtcNow;
-                user.CreatedBy = "admin";
-                user.ModifiedBy = "admin";
-
+                user.CreatedBy = _userContext.GetCurrentUserId();
                 var UserEntity = _mapper.Map<User>(user);
                 await unitOfWork.UserRepository.Add(UserEntity);
 
@@ -53,10 +54,6 @@ namespace FOOD.SERVICES.UserServices
                 var rowaffect = await unitOfWork.Commit();
 
                 return rowaffect > 0;
-            }
-            catch (KeyNotFoundException)
-            {
-                throw;
             }
             catch (Exception ex)
             {
@@ -87,10 +84,7 @@ namespace FOOD.SERVICES.UserServices
 
                 return user;
             }
-            catch (KeyNotFoundException)
-            {
-                throw;
-            }
+        
             catch (Exception ex)
             {
                 throw new Exception($"Error occurred while retrieving user with ID {Id}", ex);
@@ -108,14 +102,10 @@ namespace FOOD.SERVICES.UserServices
                 _mapper.Map(user, existingUser);
                 existingUser.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
                 existingUser.ModifiedDate = DateTime.UtcNow;
-                existingUser.ModifiedBy = existingUser.Name;
+                existingUser.ModifiedBy = _userContext.GetCurrentUserId();
 
                 var rowsAffected = await unitOfWork.Commit();
                 return rowsAffected > 0;
-            }
-            catch (KeyNotFoundException)
-            {
-                throw;
             }
             catch (Exception ex)
             {

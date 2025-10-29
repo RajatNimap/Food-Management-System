@@ -4,7 +4,9 @@ using System.Threading.Tasks;
 using AutoMapper;
 using FOOD.DATA.Entites;
 using FOOD.DATA.Infrastructure;
+using FOOD.MODEL.HelperModel;
 using FOOD.MODEL.Model;
+using FOOD.SERVICES.HttpContext;
 
 namespace FOOD.SERVICES.RecipeServices
 {
@@ -12,11 +14,13 @@ namespace FOOD.SERVICES.RecipeServices
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
+        private readonly IUserContext _userContext;
 
-        public RecipeService(IUnitOfWork unitOfWork, IMapper mapper)
+        public RecipeService(IUnitOfWork unitOfWork, IMapper mapper, IUserContext userContext)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
+            _userContext = userContext;
         }
 
         public async Task<IEnumerable<Recipe>> GetAllRecipesAsync()
@@ -57,7 +61,6 @@ namespace FOOD.SERVICES.RecipeServices
             try
             {
                 recipeModel.CreatedDate = DateTime.UtcNow;
-
                 var recipeEntity = _mapper.Map<Recipe>(recipeModel);
                 await _unitOfWork.RecipeRepository.Add(recipeEntity);
 
@@ -83,10 +86,6 @@ namespace FOOD.SERVICES.RecipeServices
                 var rowsAffected = await _unitOfWork.Commit();
                 return rowsAffected > 0;
             }
-            catch (KeyNotFoundException)
-            {
-                throw;
-            }
             catch (Exception ex)
             {
                 throw new Exception($"Error occurred while updating recipe with ID {id}", ex);
@@ -104,10 +103,6 @@ namespace FOOD.SERVICES.RecipeServices
                 _unitOfWork.RecipeRepository.Delete(recipe);
                 var rowsAffected = await _unitOfWork.Commit();
                 return rowsAffected > 0;
-            }
-            catch (KeyNotFoundException)
-            {
-                throw;
             }
             catch (Exception ex)
             {

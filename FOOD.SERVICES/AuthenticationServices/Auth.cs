@@ -53,6 +53,7 @@ namespace FOOD.SERVICES.AuthenticationServices
             var Claims = new[]
             {
 
+                new Claim(ClaimTypes.NameIdentifier,user.Id.ToString()),
                 new Claim (JwtRegisteredClaimNames.Email,user.Email),
                 new Claim (JwtRegisteredClaimNames.Name,user.Name),
                 new Claim (ClaimTypes.Role,user.Role.ToString())

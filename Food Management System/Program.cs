@@ -5,8 +5,10 @@ using FOOD.DATA.Repository.MenuRepository;
 using FOOD.DATA.Repository.OderRepository;
 using FOOD.DATA.Repository.RecipeRepository;
 using FOOD.DATA.Repository.UserRepository;
+using FOOD.MODEL.HelperModel;
 using FOOD.SERVICES.AuthenticationServices;
 using FOOD.SERVICES.BackgrounServices;
+using FOOD.SERVICES.HttpContext;
 using FOOD.SERVICES.Inventery;
 using FOOD.SERVICES.MailServices;
 using FOOD.SERVICES.Mapping;
@@ -77,6 +79,8 @@ builder.Services.AddScoped<ILowStockExcel, LowStockExcel>();
 builder.Services.AddScoped<IEmailServices, EmailServices>();
 
 builder.Services.AddHostedService<LowStockEmailNotificationServices>();
+builder.Services.AddHttpContextAccessor();      
+builder.Services.AddScoped<IUserContext,UserContext>(); 
 
 builder.Services.AddScoped<IAuth, Auth>();
 

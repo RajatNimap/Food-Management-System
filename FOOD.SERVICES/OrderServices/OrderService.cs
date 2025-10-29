@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using FOOD.DATA.Entites;
 using FOOD.DATA.Infrastructure;
+using FOOD.MODEL.HelperModel;
 using FOOD.MODEL.Model;
 using FOOD.SERVICES.MailServices;
 using Microsoft.EntityFrameworkCore;
@@ -15,12 +16,15 @@ namespace FOOD.SERVICES.OrderServices
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
         private readonly IEmailServices _emailServices;
+        private readonly IUserContext _userContext;
 
-        public OrderService(IUnitOfWork unitOfWork, IMapper mapper,IEmailServices emailServices)
+        public OrderService(IUnitOfWork unitOfWork, IMapper mapper,IEmailServices emailServices, IUserContext userContext)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
             _emailServices = emailServices;
+            _userContext = userContext;
+
         }
 
         public async Task<IEnumerable<OrdersModel>> GetAllOrdersAsync()
@@ -56,25 +60,7 @@ namespace FOOD.SERVICES.OrderServices
             }
         }
 
-        public async Task<bool> UpdateOrder(OrdersModel orderModel)
-        {
-            try
-            {
-                orderModel.CreatedDate = DateTime.UtcNow;
-                orderModel.CreatedBy = "System";
-
-                var orderEntity = _mapper.Map<Orders>(orderModel);
-                await _unitOfWork.OrderRepository.Add(orderEntity);
-
-                var rowsAffected = await _unitOfWork.Commit();
-                return rowsAffected > 0;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Error occurred while creating order", ex);
-            }
-        }
-
+     
         public async Task<bool> UpdateOrderAsync(int id, OrdersModel orderModel)
         {
             try
@@ -83,17 +69,16 @@ namespace FOOD.SERVICES.OrderServices
                 if (existingOrder == null)
                     throw new KeyNotFoundException($"Order with ID {id} not found");
 
+                existingOrder.ModifiedDate = DateTime.UtcNow;   
+                existingOrder.ModifiedBy = _userContext.UserId;
                 _mapper.Map(orderModel, existingOrder);
                 existingOrder.ModifiedDate = DateTime.UtcNow;
-                existingOrder.ModifiedBy = "System";
+                existingOrder.ModifiedBy = _userContext.GetCurrentUserId();
 
                 var rowsAffected = await _unitOfWork.Commit();
                 return rowsAffected > 0;
             }
-            catch (KeyNotFoundException)
-            {
-                throw;
-            }
+           
             catch (Exception ex)
             {
                 throw new Exception($"Error occurred while updating order with ID {id}", ex);
@@ -171,7 +156,7 @@ namespace FOOD.SERVICES.OrderServices
                         }
 
                         if (IsMoveFuther)
-                                totalAmt += (orderItem.UnitPrice * orderItem.QuantityOrdered);
+                                totalAmt += (menu.Price * orderItem.QuantityOrdered);
                     }
 
                 if (shortageItems.Any())
@@ -188,6 +173,9 @@ namespace FOOD.SERVICES.OrderServices
                 {
                     order.TotalAmount = totalAmt;
                     var MappedOrder = _mapper.Map<Orders>(order);
+                    MappedOrder.UserId = _userContext.GetCurrentUserId();
+                    MappedOrder.CreatedDate = DateTime.UtcNow;  
+                    MappedOrder.CreatedBy = _userContext.GetCurrentUserId();
                     await _unitOfWork.OrderRepository.Add(MappedOrder);
                     await _unitOfWork.Commit();
 
@@ -198,10 +186,7 @@ namespace FOOD.SERVICES.OrderServices
                         OrderId = MappedOrder.Id,
                         order = order,
                     };
-
-
                 }
-                
             }
             catch (Exception ex)
             {
@@ -209,8 +194,6 @@ namespace FOOD.SERVICES.OrderServices
                 throw new Exception("Error occurred while creating order", ex);
 
             }
-
-
         }
     }
 }
