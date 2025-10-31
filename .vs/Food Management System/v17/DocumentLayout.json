@@ -3,136 +3,112 @@
   "WorkspaceRootPath": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food management system\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|solutionrelative:food management system\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food management system\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|solutionrelative:food management system\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food management system\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|solutionrelative:food management system\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food management system\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|solutionrelative:food management system\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\orderservices\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\orderservices\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.model\\model\\orderitemsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|solutionrelative:food.model\\model\\orderitemsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.model\\model\\ordercreatedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|solutionrelative:food.model\\model\\ordercreatedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\orderservices\\iorderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\orderservices\\iorderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\httpcontext\\globalusercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\httpcontext\\globalusercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.model\\model\\ordersmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|solutionrelative:food.model\\model\\ordersmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food management system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|solutionrelative:food management system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\reportexport\\lowstockexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\reportexport\\lowstockexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\reportexport\\ilowstockexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\reportexport\\ilowstockexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\reportexport\\idailyreportexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\reportexport\\idailyreportexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.data\\entites\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\entites\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\reportexport\\dailyreportexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\reportexport\\dailyreportexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\recipeservices\\recipeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\recipeservices\\recipeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\reports\\lowstockreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\reports\\lowstockreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\userservices\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\userservices\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\menuservice\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\menuservice\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\authenticationservices\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\authenticationservices\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\reportexport\\idailyreportexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\reportexport\\idailyreportexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\reports\\dailyorderreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\reports\\dailyorderreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\userservices\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\userservices\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\reports\\ilowstockreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\reports\\ilowstockreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.model\\model\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|solutionrelative:food.model\\model\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\reports\\idailyorderreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\reports\\idailyorderreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.data\\entites\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\entites\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.model\\food.model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|solutionrelative:food.model\\food.model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food management system\\controllers\\recipecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|solutionrelative:food management system\\controllers\\recipecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.model\\model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|solutionrelative:food.model\\model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food management system\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|solutionrelative:food management system\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food management system\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|solutionrelative:food management system\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.data\\entites\\roleenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\entites\\roleenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\pagination\\paginationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\pagination\\paginationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\mailservices\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\mailservices\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\inventeryservice\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\inventeryservice\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\mailservices\\iemailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\mailservices\\iemailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.data\\repository\\userrepository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\repository\\userrepository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\orderservices\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\orderservices\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.data\\entites\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\entites\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.model\\reportmodel\\reportorderitemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|solutionrelative:food.model\\reportmodel\\reportorderitemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.data\\repository\\oderrepository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\repository\\oderrepository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.data\\repository\\oderrepository\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\repository\\oderrepository\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\reports\\lowstockreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\reports\\lowstockreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.model\\reportmodel\\dailyreportmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|solutionrelative:food.model\\reportmodel\\dailyreportmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food management system\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|solutionrelative:food management system\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food management system\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|solutionrelative:food management system\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.data\\infrastructure\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\infrastructure\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food management system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|solutionrelative:food management system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.data\\entites\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4AC8579D-D8C4-4271-90D3-CD04587730D5}|FOOD.DATA\\FOOD.DATA.csproj|solutionrelative:food.data\\entites\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\recipeservices\\irecipeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\recipeservices\\irecipeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food management system\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06EECE0A-D53B-4562-B7C0-C0E911C2AE32}|Food Management System\\Food Management System.csproj|solutionrelative:food management system\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.model\\model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCE0BC18-11F8-467D-ACB4-FE0ACD0D3AB1}|FOOD.MODEL\\FOOD.MODEL.csproj|solutionrelative:food.model\\model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|c:\\users\\nimap\\desktop\\food management system\\food management system\\food.services\\recipeservices\\irecipeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5093AFB9-C4DF-4118-9036-9DA5725D63FA}|FOOD.SERVICES\\FOOD.SERVICES.csproj|solutionrelative:food.services\\recipeservices\\irecipeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -142,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 23,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -154,31 +130,215 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "OrdersModel.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\Model\\OrdersModel.cs",
-              "RelativeDocumentMoniker": "FOOD.MODEL\\Model\\OrdersModel.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\Model\\OrdersModel.cs",
-              "RelativeToolTip": "FOOD.MODEL\\Model\\OrdersModel.cs",
-              "ViewState": "AgIAAAUAAADAZmZmZiYgwBMAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "RefreshToken.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Entites\\RefreshToken.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Entites\\RefreshToken.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Entites\\RefreshToken.cs",
+              "RelativeToolTip": "FOOD.DATA\\Entites\\RefreshToken.cs",
+              "ViewState": "AgIAAAcAAADwMjMzMzMtwAsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T10:15:33.932Z"
+              "WhenOpened": "2025-10-31T11:18:46.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FOOD.MODEL",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\FOOD.MODEL.csproj",
+              "RelativeDocumentMoniker": "FOOD.MODEL\\FOOD.MODEL.csproj",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\FOOD.MODEL.csproj",
+              "RelativeToolTip": "FOOD.MODEL\\FOOD.MODEL.csproj",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgPQAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-31T11:12:00.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\Model\\LoginModel.cs",
+              "RelativeDocumentMoniker": "FOOD.MODEL\\Model\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\Model\\LoginModel.cs",
+              "RelativeToolTip": "FOOD.MODEL\\Model\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T11:11:50.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmailServices.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\MailServices\\EmailServices.cs",
+              "RelativeDocumentMoniker": "FOOD.SERVICES\\MailServices\\EmailServices.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\MailServices\\EmailServices.cs",
+              "RelativeToolTip": "FOOD.SERVICES\\MailServices\\EmailServices.cs",
+              "ViewState": "AgIAAAoAAADgZWZmZmYkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T07:23:48.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IEmailServices.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\MailServices\\IEmailServices.cs",
+              "RelativeDocumentMoniker": "FOOD.SERVICES\\MailServices\\IEmailServices.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\MailServices\\IEmailServices.cs",
+              "RelativeToolTip": "FOOD.SERVICES\\MailServices\\IEmailServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T07:23:47.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PaginationRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\Pagination\\PaginationRequest.cs",
+              "RelativeDocumentMoniker": "FOOD.SERVICES\\Pagination\\PaginationRequest.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\Pagination\\PaginationRequest.cs",
+              "RelativeToolTip": "FOOD.SERVICES\\Pagination\\PaginationRequest.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowAsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T07:21:36.485Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "ILowStockExcel.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\ReportExport\\ILowStockExcel.cs",
-              "RelativeDocumentMoniker": "FOOD.SERVICES\\ReportExport\\ILowStockExcel.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\ReportExport\\ILowStockExcel.cs",
-              "RelativeToolTip": "FOOD.SERVICES\\ReportExport\\ILowStockExcel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\OrderServices\\OrderService.cs",
+              "RelativeDocumentMoniker": "FOOD.SERVICES\\OrderServices\\OrderService.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\OrderServices\\OrderService.cs",
+              "RelativeToolTip": "FOOD.SERVICES\\OrderServices\\OrderService.cs",
+              "ViewState": "AgIAABkAAAAAmpmZmdkgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T09:43:07.152Z"
+              "WhenOpened": "2025-10-31T07:19:07.991Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Repository\\OderRepository\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Repository\\OderRepository\\IOrderRepository.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Repository\\OderRepository\\IOrderRepository.cs",
+              "RelativeToolTip": "FOOD.DATA\\Repository\\OderRepository\\IOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T07:04:51.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LowStockReports.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\Reports\\LowStockReports.cs",
+              "RelativeDocumentMoniker": "FOOD.SERVICES\\Reports\\LowStockReports.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\Reports\\LowStockReports.cs",
+              "RelativeToolTip": "FOOD.SERVICES\\Reports\\LowStockReports.cs",
+              "ViewState": "AgIAABUAAABAy8zMzMwmwCIAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T06:54:14.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IDailyOrderReport.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\Reports\\IDailyOrderReport.cs",
+              "RelativeDocumentMoniker": "FOOD.SERVICES\\Reports\\IDailyOrderReport.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\Reports\\IDailyOrderReport.cs",
+              "RelativeToolTip": "FOOD.SERVICES\\Reports\\IDailyOrderReport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T06:53:35.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ILowStockReports.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\Reports\\ILowStockReports.cs",
+              "RelativeDocumentMoniker": "FOOD.SERVICES\\Reports\\ILowStockReports.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\Reports\\ILowStockReports.cs",
+              "RelativeToolTip": "FOOD.SERVICES\\Reports\\ILowStockReports.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T06:53:32.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Repository\\OderRepository\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Repository\\OderRepository\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Repository\\OderRepository\\OrderRepository.cs",
+              "RelativeToolTip": "FOOD.DATA\\Repository\\OderRepository\\OrderRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAUwB8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T06:43:42.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ReportOrderItemModel.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\ReportModel\\ReportOrderItemModel.cs",
+              "RelativeDocumentMoniker": "FOOD.MODEL\\ReportModel\\ReportOrderItemModel.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\ReportModel\\ReportOrderItemModel.cs",
+              "RelativeToolTip": "FOOD.MODEL\\ReportModel\\ReportOrderItemModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T06:40:19.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DailyReportModel.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\ReportModel\\DailyReportModel.cs",
+              "RelativeDocumentMoniker": "FOOD.MODEL\\ReportModel\\DailyReportModel.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\ReportModel\\DailyReportModel.cs",
+              "RelativeToolTip": "FOOD.MODEL\\ReportModel\\DailyReportModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T06:35:36.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DailyOrderReport.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\Reports\\DailyOrderReport.cs",
+              "RelativeDocumentMoniker": "FOOD.SERVICES\\Reports\\DailyOrderReport.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\Reports\\DailyOrderReport.cs",
+              "RelativeToolTip": "FOOD.SERVICES\\Reports\\DailyOrderReport.cs",
+              "ViewState": "AgIAABcAAAAAmJmZmZnpvyUAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T06:34:54.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DailyReportExcel.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\ReportExport\\DailyReportExcel.cs",
+              "RelativeDocumentMoniker": "FOOD.SERVICES\\ReportExport\\DailyReportExcel.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\ReportExport\\DailyReportExcel.cs",
+              "RelativeToolTip": "FOOD.SERVICES\\ReportExport\\DailyReportExcel.cs",
+              "ViewState": "AgIAACgAAAAgy8zMzAwnwDkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T06:32:05.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "IDailyReportExcel.cs",
               "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\ReportExport\\IDailyReportExcel.cs",
               "RelativeDocumentMoniker": "FOOD.SERVICES\\ReportExport\\IDailyReportExcel.cs",
@@ -186,330 +346,125 @@
               "RelativeToolTip": "FOOD.SERVICES\\ReportExport\\IDailyReportExcel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T09:43:06.04Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DailyReportExcel.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\ReportExport\\DailyReportExcel.cs",
-              "RelativeDocumentMoniker": "FOOD.SERVICES\\ReportExport\\DailyReportExcel.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\ReportExport\\DailyReportExcel.cs",
-              "RelativeToolTip": "FOOD.SERVICES\\ReportExport\\DailyReportExcel.cs",
-              "ViewState": "AgIAABUAAAAAiMzMzMzovwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T09:42:35.126Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "LowStockReports.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\Reports\\LowStockReports.cs",
-              "RelativeDocumentMoniker": "FOOD.SERVICES\\Reports\\LowStockReports.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\Reports\\LowStockReports.cs",
-              "RelativeToolTip": "FOOD.SERVICES\\Reports\\LowStockReports.cs",
-              "ViewState": "AgIAABAAAAAA//////8PwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T09:05:25.289Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LowStockExcel.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\ReportExport\\LowStockExcel.cs",
-              "RelativeDocumentMoniker": "FOOD.SERVICES\\ReportExport\\LowStockExcel.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\ReportExport\\LowStockExcel.cs",
-              "RelativeToolTip": "FOOD.SERVICES\\ReportExport\\LowStockExcel.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAAADEAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T09:05:17.687Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MenuService.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\MenuService\\MenuService.cs",
-              "RelativeDocumentMoniker": "FOOD.SERVICES\\MenuService\\MenuService.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\MenuService\\MenuService.cs",
-              "RelativeToolTip": "FOOD.SERVICES\\MenuService\\MenuService.cs",
-              "ViewState": "AgIAAAMAAACAMjMzMzMrwDMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T07:20:03.312Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\OrderServices\\OrderService.cs",
-              "RelativeDocumentMoniker": "FOOD.SERVICES\\OrderServices\\OrderService.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\OrderServices\\OrderService.cs",
-              "RelativeToolTip": "FOOD.SERVICES\\OrderServices\\OrderService.cs",
-              "ViewState": "AgIAALEAAACAAwAAAMAtwL0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:49:37.08Z",
+              "WhenOpened": "2025-10-31T06:32:03.636Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "Auth.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\AuthenticationServices\\Auth.cs",
-              "RelativeDocumentMoniker": "FOOD.SERVICES\\AuthenticationServices\\Auth.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\AuthenticationServices\\Auth.cs",
-              "RelativeToolTip": "FOOD.SERVICES\\AuthenticationServices\\Auth.cs",
-              "ViewState": "AgIAACQAAADA/f////8nwDkAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:58:28.731Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "DailyOrderReport.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\Reports\\DailyOrderReport.cs",
-              "RelativeDocumentMoniker": "FOOD.SERVICES\\Reports\\DailyOrderReport.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\Reports\\DailyOrderReport.cs",
-              "RelativeToolTip": "FOOD.SERVICES\\Reports\\DailyOrderReport.cs",
-              "ViewState": "AgIAABUAAAAAXGZmZmbuvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:57:46.72Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UserServices.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\UserServices\\UserServices.cs",
-              "RelativeDocumentMoniker": "FOOD.SERVICES\\UserServices\\UserServices.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\UserServices\\UserServices.cs",
-              "RelativeToolTip": "FOOD.SERVICES\\UserServices\\UserServices.cs",
-              "ViewState": "AgIAABEAAACA//////8owCoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:53:28.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GlobalUserContext.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\HttpContext\\GlobalUserContext.cs",
-              "RelativeDocumentMoniker": "FOOD.SERVICES\\HttpContext\\GlobalUserContext.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\HttpContext\\GlobalUserContext.cs",
-              "RelativeToolTip": "FOOD.SERVICES\\HttpContext\\GlobalUserContext.cs",
-              "ViewState": "AgIAAAkAAACAlpmZmRkZwBEAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:53:13.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IUserServices.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\UserServices\\IUserServices.cs",
-              "RelativeDocumentMoniker": "FOOD.SERVICES\\UserServices\\IUserServices.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\UserServices\\IUserServices.cs",
-              "RelativeToolTip": "FOOD.SERVICES\\UserServices\\IUserServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:53:08.452Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Entites\\User.cs",
-              "RelativeDocumentMoniker": "FOOD.DATA\\Entites\\User.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Entites\\User.cs",
-              "RelativeToolTip": "FOOD.DATA\\Entites\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:51:55.888Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "UserModel.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\Model\\UserModel.cs",
-              "RelativeDocumentMoniker": "FOOD.MODEL\\Model\\UserModel.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\Model\\UserModel.cs",
-              "RelativeToolTip": "FOOD.MODEL\\Model\\UserModel.cs",
-              "ViewState": "AgIAAAMAAABAMzMzMzMvwBQAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:51:29.59Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\appsettings.json",
-              "RelativeDocumentMoniker": "Food Management System\\appsettings.json",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\appsettings.json",
-              "RelativeToolTip": "Food Management System\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-29T06:47:54.962Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "MenuController.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Controllers\\MenuController.cs",
-              "RelativeDocumentMoniker": "Food Management System\\Controllers\\MenuController.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Controllers\\MenuController.cs",
-              "RelativeToolTip": "Food Management System\\Controllers\\MenuController.cs",
-              "ViewState": "AgIAADcAAACAmZmZmdkvwD8AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:45:10.343Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "RecipeController.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Controllers\\RecipeController.cs",
-              "RelativeDocumentMoniker": "Food Management System\\Controllers\\RecipeController.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Controllers\\RecipeController.cs",
-              "RelativeToolTip": "Food Management System\\Controllers\\RecipeController.cs",
-              "ViewState": "AgIAADsAAAAAiGZmZmb+v0MAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:42:30.1Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "ReportController.cs",
               "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Controllers\\ReportController.cs",
               "RelativeDocumentMoniker": "Food Management System\\Controllers\\ReportController.cs",
               "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Controllers\\ReportController.cs",
               "RelativeToolTip": "Food Management System\\Controllers\\ReportController.cs",
-              "ViewState": "AgIAABQAAAAgZ2ZmZqYnwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAABA//////84wDMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:42:23.057Z",
+              "WhenOpened": "2025-10-31T06:21:21.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "InventoryController.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Controllers\\InventoryController.cs",
-              "RelativeDocumentMoniker": "Food Management System\\Controllers\\InventoryController.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Controllers\\InventoryController.cs",
-              "RelativeToolTip": "Food Management System\\Controllers\\InventoryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:35:46.271Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Food Management System\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Food Management System\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAIAAADMmJmZmdkhwBQAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:35:45.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Food Management System\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Food Management System\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAB8AAABQ/////98wwDIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:30:36.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "RoleEnum.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Entites\\RoleEnum.cs",
-              "RelativeDocumentMoniker": "FOOD.DATA\\Entites\\RoleEnum.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Entites\\RoleEnum.cs",
-              "RelativeToolTip": "FOOD.DATA\\Entites\\RoleEnum.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:34:57.822Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "EmailServices.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\MailServices\\EmailServices.cs",
-              "RelativeDocumentMoniker": "FOOD.SERVICES\\MailServices\\EmailServices.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\MailServices\\EmailServices.cs",
-              "RelativeToolTip": "FOOD.SERVICES\\MailServices\\EmailServices.cs",
-              "ViewState": "AgIAAA4AAADAMjMzMzMdwBQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:30:36.6Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "IInventoryService.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\InventeryService\\IInventoryService.cs",
-              "RelativeDocumentMoniker": "FOOD.SERVICES\\InventeryService\\IInventoryService.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\InventeryService\\IInventoryService.cs",
-              "RelativeToolTip": "FOOD.SERVICES\\InventeryService\\IInventoryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:26:49.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Entites\\Menu.cs",
-              "RelativeDocumentMoniker": "FOOD.DATA\\Entites\\Menu.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Entites\\Menu.cs",
-              "RelativeToolTip": "FOOD.DATA\\Entites\\Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:24:44.039Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 20,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "Food Management System\\Controllers\\OrderController.cs",
               "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Controllers\\OrderController.cs",
               "RelativeToolTip": "Food Management System\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAAAQAAAAANTMzM7MTwDcAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAACgNDMzM/M1wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:14:21.093Z",
+              "WhenOpened": "2025-10-31T06:21:15.387Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IOrderServices.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\OrderServices\\IOrderServices.cs",
-              "RelativeDocumentMoniker": "FOOD.SERVICES\\OrderServices\\IOrderServices.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\OrderServices\\IOrderServices.cs",
-              "RelativeToolTip": "FOOD.SERVICES\\OrderServices\\IOrderServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAoAAAA0AAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Infrastructure\\Repository.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Infrastructure\\Repository.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Infrastructure\\Repository.cs",
+              "RelativeToolTip": "FOOD.DATA\\Infrastructure\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:13:47.83Z"
+              "WhenOpened": "2025-10-30T13:32:48.814Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RecipeServices.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\RecipeServices\\RecipeServices.cs",
-              "RelativeDocumentMoniker": "FOOD.SERVICES\\RecipeServices\\RecipeServices.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\RecipeServices\\RecipeServices.cs",
-              "RelativeToolTip": "FOOD.SERVICES\\RecipeServices\\RecipeServices.cs",
-              "ViewState": "AgIAACgAAACAMDMzM/MkwFcAAAANAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\DataContext.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\DataContext.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\DataContext.cs",
+              "RelativeToolTip": "FOOD.DATA\\DataContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T05:46:42.38Z"
+              "WhenOpened": "2025-10-30T13:32:31.514Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 13,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Entites\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Entites\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Entites\\BaseEntity.cs",
+              "RelativeToolTip": "FOOD.DATA\\Entites\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T13:32:19.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Repository\\UserRepository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Repository\\UserRepository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Repository\\UserRepository\\UserRepository.cs",
+              "RelativeToolTip": "FOOD.DATA\\Repository\\UserRepository\\UserRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAD4vxYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T10:48:05.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Food Management System\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Food Management System\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T10:47:49.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Program.cs",
+              "RelativeDocumentMoniker": "Food Management System\\Program.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Program.cs",
+              "RelativeToolTip": "Food Management System\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwB0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T10:07:39.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Entites\\Menu.cs",
+              "RelativeDocumentMoniker": "FOOD.DATA\\Entites\\Menu.cs",
+              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.DATA\\Entites\\Menu.cs",
+              "RelativeToolTip": "FOOD.DATA\\Entites\\Menu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T06:24:44.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "IRecipeServices.cs",
               "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.SERVICES\\RecipeServices\\IRecipeServices.cs",
               "RelativeDocumentMoniker": "FOOD.SERVICES\\RecipeServices\\IRecipeServices.cs",
@@ -518,42 +473,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-29T05:46:41.414Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "OrderItemsModel.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\Model\\OrderItemsModel.cs",
-              "RelativeDocumentMoniker": "FOOD.MODEL\\Model\\OrderItemsModel.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\Model\\OrderItemsModel.cs",
-              "RelativeToolTip": "FOOD.MODEL\\Model\\OrderItemsModel.cs",
-              "ViewState": "AgIAAAMAAAAgZmZmZmYkwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T05:24:10.955Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OrderCreatedResult.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\Model\\OrderCreatedResult.cs",
-              "RelativeDocumentMoniker": "FOOD.MODEL\\Model\\OrderCreatedResult.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\Model\\OrderCreatedResult.cs",
-              "RelativeToolTip": "FOOD.MODEL\\Model\\OrderCreatedResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T05:22:49.111Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "LoginModel.cs",
-              "DocumentMoniker": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\Model\\LoginModel.cs",
-              "RelativeDocumentMoniker": "FOOD.MODEL\\Model\\LoginModel.cs",
-              "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\FOOD.MODEL\\Model\\LoginModel.cs",
-              "RelativeToolTip": "FOOD.MODEL\\Model\\LoginModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T05:22:19.746Z"
             }
           ]
         }

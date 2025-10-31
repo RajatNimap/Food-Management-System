@@ -19,6 +19,7 @@ namespace FOOD.DATA.Repository.UserRepository
 
         public async Task<User?> verifyMail(string email)
         {
+
             return await dbcontext.users.FirstOrDefaultAsync(x => x.Email == email);
         }
 

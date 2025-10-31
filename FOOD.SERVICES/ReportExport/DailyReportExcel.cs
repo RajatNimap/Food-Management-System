@@ -46,7 +46,7 @@ namespace FOOD.SERVICES.ReportExport
                         range.Style.Border.Right.Style = ExcelBorderStyle.Thin;
                         range.Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
                     }
-
+                    worksheet.Cells[8,1].Value= "Order Date";
                     worksheet.Cells[8, 2].Value = "Order ID";
                     worksheet.Cells[8, 3].Value = "Customer";
                     worksheet.Cells[8, 4].Value = "Menu Item";
@@ -55,7 +55,7 @@ namespace FOOD.SERVICES.ReportExport
                     worksheet.Cells[8, 7].Value = "Item Total";
                     worksheet.Cells[8, 8].Value = "Order Total";
 
-                    using (var header = worksheet.Cells[8, 2, 8, 8])
+                    using (var header = worksheet.Cells[8, 1, 8, 8])
                     {
                         header.Style.Font.Bold = true;
                         header.Style.Fill.PatternType = ExcelFillStyle.Solid;
@@ -73,11 +73,12 @@ namespace FOOD.SERVICES.ReportExport
 
                         if (itemCount > 1)
                         {
+                            worksheet.Cells[startRow, 1, endRow, 1].Merge = true;   
                             worksheet.Cells[startRow, 2, endRow, 2].Merge = true; 
                             worksheet.Cells[startRow, 3, endRow, 3].Merge = true; 
                             worksheet.Cells[startRow, 8, endRow, 8].Merge = true; 
                         }
-
+                        worksheet.Cells[startRow, 1].Value = order.OrderDate.ToString();  
                         worksheet.Cells[startRow, 2].Value = order.OrderId;
                         worksheet.Cells[startRow, 3].Value = order.CustomerName;
                         worksheet.Cells[startRow, 8].Value = order.TotalAmount;

@@ -29,11 +29,14 @@ namespace FOOD.SERVICES.Reports
                     TotalOrders = OrdersPlaced.Count(),
                     TotalItemsSold = OrdersPlaced.Sum(o => o.OrderItems.Sum(oi => oi.QuantityOrdered)),
                     TotalRevenue = OrdersPlaced.Sum(o => o.TotalAmount),
+                    
                     Orders = OrdersPlaced.Select(o => new ReportOrderItemModel
                     {
                         OrderId = o.Id,
                         CustomerName = o.CustomerName,
                         TotalAmount = o.TotalAmount,
+                        OrderDate = o.CreatedDate.HasValue ? o.CreatedDate.Value.ToLocalTime():null,    
+
                         OrderItems = o.OrderItems.Select(oi => new ReportSummaryModel
                         {
                             MenuName = oi.Menu.MenuName,

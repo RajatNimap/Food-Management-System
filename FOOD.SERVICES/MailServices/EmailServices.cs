@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using MimeKit;
 using MailKit.Security;
+using MailKit.Net.Smtp;
 
 namespace FOOD.SERVICES.MailServices
 {
@@ -23,7 +24,7 @@ namespace FOOD.SERVICES.MailServices
             email.To.Add(MailboxAddress.Parse(toEmail));
             email.Subject = subject;    
             email.Body = new TextPart(MimeKit.Text.TextFormat.Html) { Text = body };
-            using(var smtp = new MailKit.Net.Smtp.SmtpClient())
+            using(var smtp = new SmtpClient())
             {
                 await smtp.ConnectAsync(_config["EmailSetting:Server"], int.Parse(_config["EmailSetting:Port"]),SecureSocketOptions.StartTls);
                 await smtp.AuthenticateAsync(_config["EmailSetting:SenderEmail"], _config["EmailSetting:Password"]);
