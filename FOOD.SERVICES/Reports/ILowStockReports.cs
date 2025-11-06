@@ -9,7 +9,6 @@ namespace FOOD.SERVICES.Reports
 {
     public interface ILowStockReports
     {
-
-        public Task<LowStockReportModel> GetLowStockReport();
+      public Task<LowStockReportModel> GetLowStockReport();
     }
 }

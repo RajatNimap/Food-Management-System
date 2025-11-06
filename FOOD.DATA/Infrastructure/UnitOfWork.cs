@@ -7,6 +7,7 @@ using FOOD.DATA.Repository.InventoryRepository;
 using FOOD.DATA.Repository.MenuRepository;
 using FOOD.DATA.Repository.OderRepository;
 using FOOD.DATA.Repository.RecipeRepository;
+using FOOD.DATA.Repository.RefreshTokenRepository;
 using FOOD.DATA.Repository.UserRepository;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,6 +21,7 @@ namespace FOOD.DATA.Infrastructure
         public IMenuRepository MenuRepository { get; }
         public IOrderRepository OrderRepository { get; }
         public IRecipeRepository RecipeRepository { get; }
+        public IRefreshTokenRepository RefreshTokenRepository { get; }  
 
         public UnitOfWork(
             DataContext dbContext,
@@ -27,7 +29,8 @@ namespace FOOD.DATA.Infrastructure
             IInventoryRepository inventoryRepository,
             IMenuRepository menuRepository,
             IOrderRepository orderRepository,
-            IRecipeRepository recipeRepository)
+            IRecipeRepository recipeRepository,
+            IRefreshTokenRepository refreshTokenRepository)
         {
             _dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
             UserRepository = userRepository ?? throw new ArgumentNullException(nameof(userRepository));
@@ -35,6 +38,7 @@ namespace FOOD.DATA.Infrastructure
             MenuRepository = menuRepository ?? throw new ArgumentNullException(nameof(menuRepository));
             OrderRepository = orderRepository ?? throw new ArgumentNullException(nameof(orderRepository));
             RecipeRepository = recipeRepository ?? throw new ArgumentNullException(nameof(recipeRepository));
+            RefreshTokenRepository = refreshTokenRepository ?? throw new ArgumentNullException(nameof(refreshTokenRepository)); 
         }
 
         public async Task<int> Commit()

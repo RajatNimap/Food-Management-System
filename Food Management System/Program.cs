@@ -4,6 +4,7 @@ using FOOD.DATA.Repository.InventoryRepository;
 using FOOD.DATA.Repository.MenuRepository;
 using FOOD.DATA.Repository.OderRepository;
 using FOOD.DATA.Repository.RecipeRepository;
+using FOOD.DATA.Repository.RefreshTokenRepository;
 using FOOD.DATA.Repository.UserRepository;
 using FOOD.MODEL.HelperModel;
 using FOOD.SERVICES.AuthenticationServices;
@@ -65,6 +66,7 @@ builder.Services.AddScoped<IInventoryRepository, InventoryRepository>();
 builder.Services.AddScoped<IMenuRepository, MenuRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IRecipeRepository, RecipeRepository>();
+builder.Services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddScoped<IUserServices, UserServices>();
@@ -77,12 +79,14 @@ builder.Services.AddScoped<ILowStockReports, LowStockReports>();
 builder.Services.AddScoped<IDailyReportExcel, DailyReportExcel>();
 builder.Services.AddScoped<ILowStockExcel, LowStockExcel>();
 builder.Services.AddScoped<IEmailServices, EmailServices>();
+builder.Services.AddScoped<IJwtService, JwtService>();
 
 builder.Services.AddHostedService<LowStockEmailNotificationServices>();
 builder.Services.AddHttpContextAccessor();      
 builder.Services.AddScoped<IUserContext,UserContext>(); 
 
 builder.Services.AddScoped<IAuth, Auth>();
+builder.Services.AddMemoryCache();
 
 ExcelPackage.License.SetNonCommercialOrganization("My Noncommercial organization");
 builder.Services.AddSwaggerGen(c =>

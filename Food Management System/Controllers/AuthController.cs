@@ -21,12 +21,34 @@ namespace Food_Management_System.Controllers
         public async Task<IActionResult> Login(LoginModel login)
         {
             var token = await auth.IsAuthenticated(login);
-            if (string.IsNullOrWhiteSpace(token)) {
+            if (string.IsNullOrWhiteSpace(token.Item1) || string.IsNullOrWhiteSpace(token.Item2)) {
 
                 return BadRequest("Invalid Authentication");
                             
             }
-            return Ok(token);
+            return Ok(new
+            {
+                AccessToken = token.Item1,
+                RefreshToken = token.Item2  
+            });
+        }
+        [HttpPost("RefreshToken")]
+        [AllowAnonymous]
+        public async Task<IActionResult> RefreshToken(string token)
+        {
+
+            var GeneratingToken = await auth.RefreshTokenIssue(token);
+            if (string.IsNullOrWhiteSpace(GeneratingToken.Item1) || string.IsNullOrWhiteSpace(GeneratingToken.Item2))
+            {
+
+                return BadRequest("Invalid Authentication");
+
+            }
+            return Ok(new
+            {
+                AccessToken = GeneratingToken.Item1,
+                RefreshToken = GeneratingToken.Item2
+            });
         }
     }
 }

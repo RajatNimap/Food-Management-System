@@ -15,6 +15,7 @@ namespace FOOD.DATA
         public DbSet<OrderItems> orderItems { get; set; }   
         public DbSet<Recipe> recipes { get; set; }
         public DbSet<Menu> menus { get; set; }
+        public DbSet<RefreshToken> refreshTokens { get; set; }  
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>()

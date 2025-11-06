@@ -17,13 +17,17 @@ namespace FOOD.DATA.Repository.UserRepository
            this.dbcontext = dbcontext;   
         }
 
+        //public  IQueryable<User> GetAllQuerableUsers()
+        //{
+        //    return dbcontext.users.AsQueryable();   
+
+        //}
+
         public async Task<User?> verifyMail(string email)
         {
 
             return await dbcontext.users.FirstOrDefaultAsync(x => x.Email == email);
         }
-
-
 
         //public async Task<User?> VerifyUser(LoginModel login)
         //{

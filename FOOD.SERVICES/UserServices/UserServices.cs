@@ -7,6 +7,8 @@ using FOOD.DATA.Infrastructure;
 using FOOD.DATA.Repository.UserRepository;
 using FOOD.MODEL.HelperModel;
 using FOOD.MODEL.Model;
+using FOOD.MODEL.Pagination;
+using FOOD.SERVICES.Pagination;
 using Microsoft.AspNetCore.Http;
 
 namespace FOOD.SERVICES.UserServices
@@ -27,6 +29,12 @@ namespace FOOD.SERVICES.UserServices
         {
             try
             {
+                var UserEmailExist = await unitOfWork.UserRepository.verifyMail(user.Email);
+                if(UserEmailExist != null)
+                {
+                    throw new Exception("Email Already Exist");
+                }
+
                 user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
                 user.CreatedDate = DateTime.UtcNow;
                 user.CreatedBy = _userContext.GetCurrentUserId();
@@ -74,6 +82,21 @@ namespace FOOD.SERVICES.UserServices
             }
         }
 
+        public async Task<PaginationModel<User>> GetAllUserPagination(int pageNumber,int pageSize)
+        {
+            try
+            {
+                return await unitOfWork.UserRepository.GetAllQuerable().PagedResult(
+                    pageNumber,
+                    pageSize,
+                 u => u.Id
+                );
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error occurred while retrieving all users", ex);
+            }
+        }
         public async Task<User> GetSingleUser(int Id)
         {
             try

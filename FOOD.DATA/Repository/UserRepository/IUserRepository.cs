@@ -12,6 +12,8 @@ namespace FOOD.DATA.Repository.UserRepository
     {
         //public Task<User?> VerifyUser(LoginModel login);
         public Task<User> verifyMail(string email);
+        
+        //public IQueryable<User> GetAllQuerableUsers();  
 
     }
 }

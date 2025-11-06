@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FOOD.DATA.Entites;
 
 namespace FOOD.DATA.Infrastructure
 {
@@ -13,6 +14,8 @@ namespace FOOD.DATA.Infrastructure
         void Update(T entity);  
         Task Add(T entity); 
         void Delete(T entity);
+        IQueryable<T> GetAllQuerable();
+
 
     }
 }

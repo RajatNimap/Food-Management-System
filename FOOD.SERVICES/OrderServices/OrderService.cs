@@ -6,7 +6,9 @@ using FOOD.DATA.Entites;
 using FOOD.DATA.Infrastructure;
 using FOOD.MODEL.HelperModel;
 using FOOD.MODEL.Model;
+using FOOD.MODEL.Pagination;
 using FOOD.SERVICES.MailServices;
+using FOOD.SERVICES.Pagination;
 using Microsoft.EntityFrameworkCore;
 
 namespace FOOD.SERVICES.OrderServices
@@ -39,6 +41,7 @@ namespace FOOD.SERVICES.OrderServices
                 throw new Exception("Error occurred while retrieving all orders", ex);
             }
         }
+
 
         public async Task<OrdersModel> GetOrderByIdAsync(int id)
         {
@@ -192,6 +195,19 @@ namespace FOOD.SERVICES.OrderServices
             {
     
                 throw new Exception("Error occurred while creating order", ex);
+
+            }
+        }
+
+        public async Task<PaginationModel<Orders>> GetAllQuerable(int pnum, int psize)
+        {
+            try
+            {
+                return await _unitOfWork.OrderRepository.GetAllQuerable().PagedResult(pnum, psize, x => x.Id);
+
+            }catch(Exception ex)
+            {
+                throw new Exception("Error occurred while getting  order", ex);
 
             }
         }

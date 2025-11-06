@@ -7,8 +7,11 @@ using FOOD.MODEL.Model;
 
 namespace FOOD.SERVICES.AuthenticationServices
 {
+
     public interface IAuth
     {
-        Task<string> IsAuthenticated(LoginModel login);   
+        Task<(string,string)> IsAuthenticated(LoginModel login);
+        Task<(string,string)> RefreshTokenIssue(string refreshToken);   
     }
+
 }

@@ -7,6 +7,9 @@ using FOOD.DATA.Entites;
 using FOOD.DATA.Infrastructure;
 using FOOD.MODEL.HelperModel;
 using FOOD.MODEL.Model;
+using FOOD.MODEL.Pagination;
+using FOOD.SERVICES.Pagination;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace FOOD.SERVICES.MenuServices
 {
@@ -15,12 +18,14 @@ namespace FOOD.SERVICES.MenuServices
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
         private readonly IUserContext _userContext;
+        private readonly IMemoryCache _cache;
 
-        public MenuService(IUnitOfWork unitOfWork, IMapper mapper,IUserContext userContext)
+        public MenuService(IUnitOfWork unitOfWork, IMapper mapper,IUserContext userContext, IMemoryCache cache)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
             _userContext = userContext;
+            _cache = cache;
         }
 
         public async Task<IEnumerable<Menu>> GetAllMenusAsync()
@@ -31,7 +36,16 @@ namespace FOOD.SERVICES.MenuServices
 
         public async Task<Menu> GetMenuByIdAsync(int id)
         {
+            var Menukey = $"Menu{id}";
+            if(_cache.TryGetValue(Menukey,out Menu? cachedata))
+            {
+                if(cachedata != null)
+                {
+                    return cachedata;
+                }
+            }
             var menu = await _unitOfWork.MenuRepository.GetById(id);
+            _cache.Set(Menukey, menu, TimeSpan.FromMinutes(5));
             return menu;
         }
 
@@ -46,6 +60,10 @@ namespace FOOD.SERVICES.MenuServices
                 await _unitOfWork.MenuRepository.Add(menuEntity);
 
                 var rowsAffected = await _unitOfWork.Commit();
+                if(rowsAffected > 0)
+                {
+                   
+                }
                 return rowsAffected > 0;
             }
             catch (Exception ex)
@@ -68,6 +86,10 @@ namespace FOOD.SERVICES.MenuServices
                 existingMenu.ModifiedBy = _userContext.GetCurrentUserId(); 
 
                 var rowsAffected = await _unitOfWork.Commit();
+                if(rowsAffected > 0)
+                {
+                    _cache.Remove($"Menu{id}"); 
+                }
                 return rowsAffected > 0;
             }
             catch (Exception ex)
@@ -86,6 +108,10 @@ namespace FOOD.SERVICES.MenuServices
 
                 _unitOfWork.MenuRepository.Delete(menu);
                 var rowsAffected = await _unitOfWork.Commit();
+                if (rowsAffected > 0)
+                {
+                    _cache.Remove($"Menu{id}");
+                }
                 return rowsAffected > 0;
             }
             catch (Exception ex)
@@ -94,5 +120,32 @@ namespace FOOD.SERVICES.MenuServices
             }
         }
 
+        public async Task<PaginationModel<Menu>> GetAllQuerable(int pnum, int psize)
+        {
+            try
+            {
+                var MenuCacheKey = $"MenuList_Page{pnum}_Size{psize}";
+                if(_cache.TryGetValue(MenuCacheKey,out PaginationModel<Menu>? cachedData))
+                {
+                    if (cachedData != null)
+                    {
+                        Console.WriteLine("Fetching data from cache.");
+                        return cachedData;
+                    }
+
+                }
+                
+                var data = await _unitOfWork.MenuRepository.GetAllQuerable().PagedResult(pnum, psize, x => x.Id);
+                _cache.Set(MenuCacheKey,data,TimeSpan.FromMinutes(5));
+                Console.WriteLine("Fetching from data.");
+
+                return data;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error occurred while getting  order", ex);
+
+            }
+        }
     }
 }

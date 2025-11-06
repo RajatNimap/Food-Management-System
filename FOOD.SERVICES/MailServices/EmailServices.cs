@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using MimeKit;
 using MailKit.Security;
 using MailKit.Net.Smtp;
+using MimeKit.Text;
 
 namespace FOOD.SERVICES.MailServices
 {
@@ -23,7 +24,7 @@ namespace FOOD.SERVICES.MailServices
             email.From.Add(new MailboxAddress(_config["EmailSetting:SenderName"],_config["EmailSetting:SenderEmail"]));    
             email.To.Add(MailboxAddress.Parse(toEmail));
             email.Subject = subject;    
-            email.Body = new TextPart(MimeKit.Text.TextFormat.Html) { Text = body };
+            email.Body = new TextPart(TextFormat.Html) { Text = body };
             using(var smtp = new SmtpClient())
             {
                 await smtp.ConnectAsync(_config["EmailSetting:Server"], int.Parse(_config["EmailSetting:Port"]),SecureSocketOptions.StartTls);

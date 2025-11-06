@@ -19,9 +19,9 @@ namespace Food_Management_System.Controllers
 
         [HttpGet]
         [Authorize(Roles = "Admin,Cashier")]
-        public async Task<IActionResult> GetAllMenus()
+        public async Task<IActionResult> GetAllMenus(int pnum, int psize)
         {
-            var menus = await _menuService.GetAllMenusAsync();
+            var menus = await _menuService.GetAllQuerable(pnum, psize);
             return Ok(menus);
         }
 

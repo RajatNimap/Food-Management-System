@@ -20,9 +20,9 @@ namespace Food_Management_System.Controllers
 
         [HttpGet]
         [Authorize(Roles ="Admin")]
-        public async Task<IActionResult> GetAllInventory()
+        public async Task<IActionResult> GetAllInventory(int pnum, int psize)
         {
-            var inventoryItems = await _inventoryService.GetAllInventory();
+            var inventoryItems = await _inventoryService.GetAllQuerable(pnum,psize);
             return Ok(inventoryItems);
         }
 

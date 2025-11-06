@@ -6,7 +6,9 @@ using FOOD.DATA.Entites;
 using FOOD.DATA.Infrastructure;
 using FOOD.MODEL.HelperModel;
 using FOOD.MODEL.Model;
+using FOOD.MODEL.Pagination;
 using FOOD.SERVICES.HttpContext;
+using FOOD.SERVICES.Pagination;
 
 namespace FOOD.SERVICES.RecipeServices
 {
@@ -107,6 +109,20 @@ namespace FOOD.SERVICES.RecipeServices
             catch (Exception ex)
             {
                 throw new Exception($"Error occurred while deleting recipe with ID {id}", ex);
+            }
+        }
+
+        public async Task<PaginationModel<Recipe>> GetPaginationAsync(int pnum,int psize)
+        {
+            try
+            {
+                return await _unitOfWork.RecipeRepository.GetAllQuerable()
+                    .PagedResult(pnum, psize, r => r.RecipeId);   
+
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("error occur while fetching data", ex);
             }
         }
     }

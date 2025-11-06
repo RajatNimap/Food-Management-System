@@ -19,9 +19,9 @@ namespace Food_Management_System.Controllers
 
         [HttpGet]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> GetAllUser() {
+        public async Task<IActionResult> GetAllUser(int pageNumber,int pageSize) {
 
-            var UserDetail = await userServices.GetAllUser();
+            var UserDetail = await userServices.GetAllUserPagination(pageNumber, pageSize);
             return Ok(UserDetail);
         }
 

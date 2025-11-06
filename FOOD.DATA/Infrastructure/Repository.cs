@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FOOD.DATA.Entites;
 using Microsoft.EntityFrameworkCore;
 
 namespace FOOD.DATA.Infrastructure
@@ -42,5 +43,11 @@ namespace FOOD.DATA.Infrastructure
         {
               dbset.Update(entity);
         }
+        public IQueryable<T> GetAllQuerable()
+        {
+            return dbset.AsQueryable().AsNoTracking();
+
+        }
+
     }
 }

@@ -19,9 +19,9 @@ namespace Food_Management_System.Controllers
 
         [HttpGet]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> GetAllRecipes()
+        public async Task<IActionResult> GetAllRecipes(int pnum, int psize)
         {
-            var recipes = await _recipeService.GetAllRecipesAsync();
+            var recipes = await _recipeService.GetPaginationAsync(pnum,psize);
             return Ok(recipes);
         }
         [HttpGet("{id}")]

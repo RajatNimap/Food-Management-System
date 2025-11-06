@@ -5,6 +5,8 @@ using AutoMapper;
 using FOOD.DATA.Entites;
 using FOOD.DATA.Infrastructure;
 using FOOD.MODEL.Model;
+using FOOD.MODEL.Pagination;
+using FOOD.SERVICES.Pagination;
 
 namespace FOOD.SERVICES.Inventery
 {
@@ -64,6 +66,20 @@ namespace FOOD.SERVICES.Inventery
            var rowaffected= await unitOfWork.Commit();
             return rowaffected > 0;
 
+        }
+
+        public async Task<PaginationModel<Inventory>> GetAllQuerable(int pnum, int psize)
+        {
+            try
+            {
+                return await unitOfWork.InventoryRepository.GetAllQuerable().PagedResult(pnum, psize, x => x.Id);
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error occurred while getting  order", ex);
+
+            }
         }
     }
 }

@@ -18,14 +18,14 @@ namespace Food_Management_System.Controllers
 
         
         [HttpGet]
-        [Authorize(Roles = "Cashier")]
-        public async Task<IActionResult> GetAllOrders()
+        [Authorize(Roles = "Cashier,Admin")]
+        public async Task<IActionResult> GetAllOrders(int pnum, int psize)
         {
-            var orders = await _orderService.GetAllOrdersAsync();
+            var orders = await _orderService.GetAllQuerable(pnum,psize);
             return Ok(orders);
         }
         [HttpGet("{id}")]
-        [Authorize(Roles = "Cashier")]
+        [Authorize(Roles = "Cashier,Admin")]
         public async Task<IActionResult> GetOrderById(int id)
         {
             var order = await _orderService.GetOrderByIdAsync(id);

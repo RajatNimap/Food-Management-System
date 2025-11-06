@@ -13,7 +13,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Identity.Client;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
-
+using System.Security.Cryptography;
+using Azure.Core;
 
 namespace FOOD.SERVICES.AuthenticationServices
 {
@@ -21,58 +22,61 @@ namespace FOOD.SERVICES.AuthenticationServices
     {
 
         private readonly IUnitOfWork unitOfWork;
-        private readonly IConfiguration config;
-        public Auth(IUnitOfWork unitOfWork,IConfiguration config)
+        private readonly IJwtService jwtService;
+        public Auth(IUnitOfWork unitOfWork,IConfiguration config, IJwtService jwtService    )
         {
             this.unitOfWork = unitOfWork;
-            this.config = config;
+            this.jwtService = jwtService;
         }
-        public async Task<string> IsAuthenticated(LoginModel login)
+
+        public async Task<(string,string)> IsAuthenticated(LoginModel login)
         {
             var user = await unitOfWork.UserRepository.verifyMail(login.Email);
             if (user == null)
             {
-                return string.Empty;
+                return  Task.FromResult((string.Empty, string.Empty)).Result;   
             }
             var verifyCredential = BCrypt.Net.BCrypt.Verify(login.Password, user.Password);
-          
-              if(verifyCredential == false)
-              {
-                return string.Empty;
-              }
-         
-
-            return GenerateToken(user);
-           
-        }
-
-        private string GenerateToken(User user) {
-
-            var SecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["JWT:Key"]));
-            var Credential = new SigningCredentials(SecurityKey,SecurityAlgorithms.HmacSha256);
-            var Claims = new[]
+            if(verifyCredential == false)
             {
+                return Task.FromResult((string.Empty, string.Empty)).Result;
+            }
+         
+            var AccessToken = jwtService.JwtAccessToken(user);   
+            var RefreshToken = jwtService.JwtRefreshToken();
+            if (RefreshToken != null)
+            {
+               var refreshTokenData = new RefreshToken
+               {
+                   Token = RefreshToken,
+                   UserId = user.Id,    
+                   ExpiresDate = DateTime.UtcNow.AddDays(7),
+                   Email = user.Email,
+                   IsRevoked = false    
 
-                new Claim(ClaimTypes.NameIdentifier,user.Id.ToString()),
-                new Claim (JwtRegisteredClaimNames.Email,user.Email),
-                new Claim (JwtRegisteredClaimNames.Name,user.Name),
-                new Claim (ClaimTypes.Role,user.Role.ToString())
+               };
+                await unitOfWork.RefreshTokenRepository.Add(refreshTokenData);
+                await unitOfWork.Commit();  
+            }   
+            return (AccessToken, RefreshToken); 
 
-            };
-            var Token = new JwtSecurityToken(
-
-                issuer: config["JWT:Issuer"],
-                audience: config["JWT:Audience"],
-                claims: Claims,
-                expires: DateTime.UtcNow.AddHours(3),
-                signingCredentials: Credential
-
-            );
-
-
-            return new JwtSecurityTokenHandler().WriteToken(Token);
         }
 
+        public async Task<(string, string)> RefreshTokenIssue(string refreshToken)
+        {
+            
+            var isValidToken = await unitOfWork.RefreshTokenRepository.IsValidToken(refreshToken);
+            if (isValidToken == null)
+            {
+                return Task.FromResult((string.Empty, string.Empty)).Result;
+            }
+            isValidToken.IsRevoked = true;  
+            var user = await unitOfWork.UserRepository.verifyMail(isValidToken.Email);  
 
+            var accessToken = jwtService.JwtAccessToken(user);
+            var refreshNewToken = jwtService.JwtRefreshToken();
+            await unitOfWork.Commit();
+            return (accessToken, refreshNewToken);
+        }
     }
 }

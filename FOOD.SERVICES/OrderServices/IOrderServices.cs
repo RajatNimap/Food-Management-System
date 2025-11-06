@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using FOOD.DATA.Entites;
 using FOOD.MODEL.Model;
+using FOOD.MODEL.Pagination;
 
 namespace FOOD.SERVICES.OrderServices
 {
@@ -12,5 +13,6 @@ namespace FOOD.SERVICES.OrderServices
         Task<bool> UpdateOrderAsync(int id, OrdersModel orderModel);
         Task<bool> DeleteOrderAsync(int id);
         Task<OrderCreatedResult> PlacingOrder(OrdersModel order);   
+        Task<PaginationModel<Orders>> GetAllQuerable(int pnum,int psize);
     }
 }

@@ -7,6 +7,7 @@ using FOOD.DATA.Repository.InventoryRepository;
 using FOOD.DATA.Repository.MenuRepository;
 using FOOD.DATA.Repository.OderRepository;
 using FOOD.DATA.Repository.RecipeRepository;
+using FOOD.DATA.Repository.RefreshTokenRepository;
 using FOOD.DATA.Repository.UserRepository;
 
 namespace FOOD.DATA.Infrastructure
@@ -18,6 +19,7 @@ namespace FOOD.DATA.Infrastructure
         public IMenuRepository MenuRepository { get; }
         public IOrderRepository OrderRepository { get; }    
         public IRecipeRepository RecipeRepository { get; }
+        public IRefreshTokenRepository RefreshTokenRepository { get; }
         public Task<int> Commit();
     }
 }

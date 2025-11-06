@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FOOD.DATA.Entites;
 using FOOD.MODEL.Model;
+using FOOD.MODEL.Pagination;
 
 
 namespace FOOD.SERVICES.UserServices
@@ -16,6 +17,6 @@ namespace FOOD.SERVICES.UserServices
         public Task<bool> AddUser(UserModel user);   
         public Task<bool> UpdateUser(int id,UserModel user);
         public Task<bool> DeleteUser(int id);
-
+        public Task<PaginationModel<User>> GetAllUserPagination(int pageNumber,int pageSize);
     }
 }
