@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P8sHNcDunGI=",
+  "dgSpecHash": "TSPgGMYweVU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nimap\\Desktop\\Food Management System\\Food Management System\\Food Management System\\Food Management System.csproj",
+  "projectFilePath": "C:\\Users\\Nimap\\Desktop\\Food-Management-System\\Food Management System\\Food Management System.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nimap\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

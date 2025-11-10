@@ -37,15 +37,8 @@ namespace FOOD.SERVICES.ReportExport
                     worksheet.Cells[3, 3].Value = data.TotalOrders;
                     worksheet.Cells[4, 3].Value = data.TotalItemsSold;
                     worksheet.Cells[5, 3].Value = data.TotalRevenue;
-                    worksheet.Cells[5, 3].Style.Numberformat.Format = "₹#,##0.00";
 
-                    using (var range = worksheet.Cells[2, 2, 5, 3])
-                    {
-                        range.Style.Border.Top.Style = ExcelBorderStyle.Thin;
-                        range.Style.Border.Left.Style = ExcelBorderStyle.Thin;
-                        range.Style.Border.Right.Style = ExcelBorderStyle.Thin;
-                        range.Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
-                    }
+                
                     worksheet.Cells[8,1].Value= "Order Date";
                     worksheet.Cells[8, 2].Value = "Order ID";
                     worksheet.Cells[8, 3].Value = "Customer";
@@ -55,14 +48,7 @@ namespace FOOD.SERVICES.ReportExport
                     worksheet.Cells[8, 7].Value = "Item Total";
                     worksheet.Cells[8, 8].Value = "Order Total";
 
-                    using (var header = worksheet.Cells[8, 1, 8, 8])
-                    {
-                        header.Style.Font.Bold = true;
-                        header.Style.Fill.PatternType = ExcelFillStyle.Solid;
-                        header.Style.Fill.BackgroundColor.SetColor(Color.LightGray);
-                        header.Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
-                        header.Style.VerticalAlignment = ExcelVerticalAlignment.Center;
-                    }
+                   
 
                     int startRow = 9;
 
@@ -82,7 +68,6 @@ namespace FOOD.SERVICES.ReportExport
                         worksheet.Cells[startRow, 2].Value = order.OrderId;
                         worksheet.Cells[startRow, 3].Value = order.CustomerName;
                         worksheet.Cells[startRow, 8].Value = order.TotalAmount;
-                        worksheet.Cells[startRow, 8].Style.Numberformat.Format = "₹#,##0.00";
 
                         int currentRow = startRow;
                         foreach (var item in order.OrderItems)
@@ -90,9 +75,7 @@ namespace FOOD.SERVICES.ReportExport
                             worksheet.Cells[currentRow, 4].Value = item.MenuName;
                             worksheet.Cells[currentRow, 5].Value = item.Quantity;
                             worksheet.Cells[currentRow, 6].Value = item.unitprice;
-                            worksheet.Cells[currentRow, 6].Style.Numberformat.Format = "₹#,##0.00";
                             worksheet.Cells[currentRow, 7].Value = item.Quantity * item.unitprice;
-                            worksheet.Cells[currentRow, 7].Style.Numberformat.Format = "₹#,##0.00";
                             currentRow++;
 
                         }
@@ -100,13 +83,7 @@ namespace FOOD.SERVICES.ReportExport
                         startRow = endRow + 1;
                     }
 
-                    using (var range = worksheet.Cells[8, 2, startRow - 1, 8])
-                    {
-                        range.Style.Border.Top.Style = ExcelBorderStyle.Thin;
-                        range.Style.Border.Left.Style = ExcelBorderStyle.Thin;
-                        range.Style.Border.Right.Style = ExcelBorderStyle.Thin;
-                        range.Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
-                    }
+                    
 
                     worksheet.Cells.AutoFitColumns();
 
