@@ -132,7 +132,6 @@ namespace FOOD.SERVICES.MenuServices
                         Console.WriteLine("Fetching data from cache.");
                         return cachedData;
                     }
-
                 }
                 
                 var data = await _unitOfWork.MenuRepository.GetAllQuerable().PagedResult(pnum, psize, x => x.Id);

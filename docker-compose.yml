@@ -1,0 +1,28 @@
+networks:
+    FoodApp: 
+
+services:
+  FMSDB:
+    container_name: "FooDB"
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+    - 8002:1433
+    environment:
+     - ACCEPT_EULA=Y
+     - MSSQL_SA_PASSWORD=Nimap@123
+     - MSSQL_PID=Express
+    networks:
+      - FoodApp
+  foodmanagementsystem:
+    container_name:  "Food_Management_System"
+    image: ${DOCKER_REGISTRY-}foodmanagementsystem
+    build:
+      context: .
+      dockerfile: Food Management System/Dockerfile
+    ports:
+      - 8001:80
+    depends_on:
+        - FMSDB
+    networks:
+      - FoodApp
+    
