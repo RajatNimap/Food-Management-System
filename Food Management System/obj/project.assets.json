@@ -2062,6 +2062,9 @@
       "FOOD.MODEL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FOOD.DATA": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/FOOD.MODEL.dll": {}
         },
@@ -2078,6 +2081,7 @@
           "EPPlus": "8.2.0",
           "FOOD.DATA": "1.0.0",
           "FOOD.MODEL": "1.0.0",
+          "FOOD.Utility": "1.0.0",
           "MailKit": "4.10.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.3.0",
           "Microsoft.Extensions.Hosting.Abstractions": "9.0.10"
@@ -2087,6 +2091,19 @@
         },
         "runtime": {
           "bin/placeholder/FOOD.SERVICES.dll": {}
+        }
+      },
+      "FOOD.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FOOD.MODEL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FOOD.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FOOD.Utility.dll": {}
         }
       }
     }
@@ -6089,6 +6106,11 @@
       "type": "project",
       "path": "../FOOD.SERVICES/FOOD.SERVICES.csproj",
       "msbuildProject": "../FOOD.SERVICES/FOOD.SERVICES.csproj"
+    },
+    "FOOD.Utility/1.0.0": {
+      "type": "project",
+      "path": "../../FOOD.Utility/FOOD.Utility.csproj",
+      "msbuildProject": "../../FOOD.Utility/FOOD.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {

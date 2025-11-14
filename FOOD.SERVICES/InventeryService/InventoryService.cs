@@ -6,7 +6,8 @@ using FOOD.DATA.Entites;
 using FOOD.DATA.Infrastructure;
 using FOOD.MODEL.Model;
 using FOOD.MODEL.Pagination;
-using FOOD.SERVICES.Pagination;
+using FOOD.Utility;
+using FOOD.Utility.Extension;
 
 namespace FOOD.SERVICES.Inventery
 {
@@ -26,12 +27,12 @@ namespace FOOD.SERVICES.Inventery
             return await unitOfWork.InventoryRepository.GetAll();
             
         }
-
-        public async Task<Inventory> GetSinglInventory(int id)
+        public async Task<InventoryModel> GetSinglInventory(int id)
         {
-            return await unitOfWork.InventoryRepository.GetById(id);
+            var data = await unitOfWork.InventoryRepository.GetById(id);
+            return _mapper.Map<InventoryModel>(data);
+            
         }
-
         public async Task<bool> AddInventory(InventoryModel model)
         {
             model.CreatedDate = DateTime.UtcNow;
@@ -68,12 +69,19 @@ namespace FOOD.SERVICES.Inventery
 
         }
 
-        public async Task<PaginationModel<Inventory>> GetAllQuerable(int pnum, int psize)
+        public async Task<PaginationModel<InventoryModel>> GetAllQuerable(int pnum, int psize)
         {
             try
             {
-                return await unitOfWork.InventoryRepository.GetAllQuerable().PagedResult(pnum, psize, x => x.Id);
-
+                var data= await unitOfWork.InventoryRepository.GetAllQuerable().PagedResult(pnum, psize, x => x.Id);
+                var model=_mapper.Map<List<InventoryModel>>(data.Items);
+                return new PaginationModel<InventoryModel>
+                {
+                    Items = model,
+                    TotalRecord = data.TotalRecord,
+                    PageNumer = data.PageNumer,
+                    PageSize = data.PageSize
+                };
             }
             catch (Exception ex)
             {

@@ -8,8 +8,9 @@ using FOOD.DATA.Repository.UserRepository;
 using FOOD.MODEL.HelperModel;
 using FOOD.MODEL.Model;
 using FOOD.MODEL.Pagination;
-using FOOD.SERVICES.Pagination;
 using Microsoft.AspNetCore.Http;
+using FOOD.Utility.Extension;
+using FOOD.Utility;
 
 namespace FOOD.SERVICES.UserServices
 {
@@ -82,32 +83,45 @@ namespace FOOD.SERVICES.UserServices
             }
         }
 
-        public async Task<PaginationModel<User>> GetAllUserPagination(int pageNumber,int pageSize)
+        public async Task<PaginationModel<UserModel>> GetAllUserPagination(int pageNumber,int pageSize)
         {
             try
             {
-                return await unitOfWork.UserRepository.GetAllQuerable().PagedResult(
+                var data =  await unitOfWork.UserRepository.GetAllQuerable().PagedResult(
                     pageNumber,
                     pageSize,
                  u => u.Id
                 );
+                var model = _mapper.Map<List<UserModel>>(data.Items);
+                var result = new PaginationModel<UserModel>
+                {
+                    Items = model,
+                    TotalRecord = data.TotalRecord,
+                    PageNumer = data.PageNumer,
+                    PageSize = data.PageSize,
+                };
+
+                return result;
+
+
             }
             catch (Exception ex)
             {
                 throw new Exception("Error occurred while retrieving all users", ex);
             }
         }
-        public async Task<User> GetSingleUser(int Id)
+        public async Task<UserModel> GetSingleUser(int Id)
         {
             try
             {
                 var user = await unitOfWork.UserRepository.GetById(Id);
                 if (user == null)
                     throw new KeyNotFoundException($"User with ID {Id} not found");
-
-                return user;
+               var model= _mapper.Map<UserModel>(user);
+                return model;
+                
             }
-        
+                
             catch (Exception ex)
             {
                 throw new Exception($"Error occurred while retrieving user with ID {Id}", ex);

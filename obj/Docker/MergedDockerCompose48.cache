@@ -1,0 +1,79 @@
+name: dockercompose7240360482259121943
+services:
+  FMSDB:
+    container_name: FoodDB
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Express
+      MSSQL_SA_PASSWORD: Nimap@123
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      FoodApp: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "8003"
+        protocol: tcp
+  foodmanagementsystem:
+    build:
+      context: C:\Users\Nimap\Desktop\Food-Management-System
+      dockerfile: Food Management System/Dockerfile
+    container_name: Food_Management_System
+    depends_on:
+      FMSDB:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+      ConnectionStrings__DefaultConnection: Server=FMSDB;Database=FoodDB;User=sa;Password=Nimap@123;TrustServerCertificate=True
+      EmailSetting__Password: fjmsaywidbxfudqp
+      EmailSetting__Port: "587"
+      EmailSetting__SenderEmail: rajatpandit06655@gmail.com
+      EmailSetting__SenderName: Food Management System
+      EmailSetting__Server: smtp.gmail.com
+      Jwt__Audience: https://localhost:8004/
+      Jwt__Issuer: https://localhost:8004/
+      Jwt__Key: 3CkH4PlKn0JwdzBaX1Tx5z4SYGl8hLONXBnH6U0DRuK6tz3kEtAmXqXrh2HDlU0NJJ5uhRmfXZMiEtwToAv8qQ
+    networks:
+      FoodApp: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8004"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\Nimap\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\Nimap\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\Nimap\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\Nimap\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  FoodApp:
+    name: dockercompose7240360482259121943_FoodApp

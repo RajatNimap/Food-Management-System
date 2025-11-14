@@ -8,7 +8,7 @@ using FOOD.MODEL.HelperModel;
 using FOOD.MODEL.Model;
 using FOOD.MODEL.Pagination;
 using FOOD.SERVICES.HttpContext;
-using FOOD.SERVICES.Pagination;
+using FOOD.Utility.Extension;
 
 namespace FOOD.SERVICES.RecipeServices
 {
@@ -117,7 +117,7 @@ namespace FOOD.SERVICES.RecipeServices
             try
             {
                 return await _unitOfWork.RecipeRepository.GetAllQuerable()
-                    .PagedResult(pnum, psize, r => r.RecipeId);   
+                    .PagedResult(pnum, psize, r => r.RecipeId);
 
             }
             catch(Exception ex)

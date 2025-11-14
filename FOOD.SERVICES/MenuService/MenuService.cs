@@ -8,7 +8,7 @@ using FOOD.DATA.Infrastructure;
 using FOOD.MODEL.HelperModel;
 using FOOD.MODEL.Model;
 using FOOD.MODEL.Pagination;
-using FOOD.SERVICES.Pagination;
+using FOOD.Utility.Extension;
 using Microsoft.Extensions.Caching.Memory;
 
 namespace FOOD.SERVICES.MenuServices
@@ -45,6 +45,7 @@ namespace FOOD.SERVICES.MenuServices
                 }
             }
             var menu = await _unitOfWork.MenuRepository.GetById(id);
+            _mapper.Map<MenuModel>(menu);
             _cache.Set(Menukey, menu, TimeSpan.FromMinutes(5));
             return menu;
         }
@@ -120,12 +121,12 @@ namespace FOOD.SERVICES.MenuServices
             }
         }
 
-        public async Task<PaginationModel<Menu>> GetAllQuerable(int pnum, int psize)
+        public async Task<PaginationModel<MenuModel>> GetAllQuerable(int pnum, int psize)
         {
             try
             {
                 var MenuCacheKey = $"MenuList_Page{pnum}_Size{psize}";
-                if(_cache.TryGetValue(MenuCacheKey,out PaginationModel<Menu>? cachedData))
+                if(_cache.TryGetValue(MenuCacheKey,out PaginationModel<MenuModel>? cachedData))
                 {
                     if (cachedData != null)
                     {
@@ -135,10 +136,18 @@ namespace FOOD.SERVICES.MenuServices
                 }
                 
                 var data = await _unitOfWork.MenuRepository.GetAllQuerable().PagedResult(pnum, psize, x => x.Id);
-                _cache.Set(MenuCacheKey,data,TimeSpan.FromMinutes(5));
+                var model = _mapper.Map<List<MenuModel>>(data.Items);
+                var result = new PaginationModel<MenuModel>
+                {
+                        Items = model,
+                        PageNumer =data.PageNumer,
+                        PageSize =data.PageSize,
+                        TotalRecord=data.TotalRecord
+                };
+                _cache.Set(MenuCacheKey,result,TimeSpan.FromMinutes(5));
                 Console.WriteLine("Fetching from data.");
 
-                return data;
+                return result;
             }
             catch (Exception ex)
             {

@@ -30,8 +30,6 @@ using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
@@ -93,9 +91,9 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "Hospital Management",
+        Title = "Food Management System",
         Version = "v1",
-        Description = "API documentation for the Hospital Outpatient Management System"
+        Description = "API documentation for the Food Management System"
     });
 
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -125,12 +123,16 @@ builder.Services.AddSwaggerGen(c =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
+//if (app.Environment.IsDevelopment())
+//{
+//    app.UseSwagger();
+//    app.UseSwaggerUI();
+//}
+// for the deployment
+app.UseSwagger();
+app.UseSwaggerUI();
+app.UseDefaultFiles();
+app.UseStaticFiles();
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();

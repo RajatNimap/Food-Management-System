@@ -13,6 +13,7 @@
           "EPPlus": "8.2.0",
           "FOOD.DATA": "1.0.0",
           "FOOD.MODEL": "1.0.0",
+          "FOOD.Utility": "1.0.0",
           "MailKit": "4.10.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.3.0",
           "Microsoft.Extensions.Hosting.Abstractions": "9.0.10"
@@ -878,8 +879,22 @@
         }
       },
       "FOOD.MODEL/1.0.0": {
+        "dependencies": {
+          "FOOD.DATA": "1.0.0"
+        },
         "runtime": {
           "FOOD.MODEL.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "FOOD.Utility/1.0.0": {
+        "dependencies": {
+          "FOOD.MODEL": "1.0.0"
+        },
+        "runtime": {
+          "FOOD.Utility.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1438,6 +1453,11 @@
       "sha512": ""
     },
     "FOOD.MODEL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FOOD.Utility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -46,9 +46,6 @@ namespace FOOD.DATA.Infrastructure
             return await _dbContext.SaveChangesAsync();
         }
 
-        public void Dispose()
-        {
-            _dbContext?.Dispose();
-        }
+       
     }
 }

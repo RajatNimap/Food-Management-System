@@ -5,15 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace FOOD.MODEL.Model
 {
+    [Index(nameof(Email), IsUnique = true)]
     public class UserModel:BaseEntityModel
     {
         [Required]
         public string Name { get; set; }
         [Required]
-        [EmailAddress]
         public string Email { get; set; }
         [Required]
         public string Password { get; set; }

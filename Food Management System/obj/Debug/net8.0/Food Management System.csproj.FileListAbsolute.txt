@@ -571,3 +571,6 @@ C:\Users\Nimap\Desktop\Food-Management-System\Food Management System\obj\Debug\n
 C:\Users\Nimap\Desktop\Food-Management-System\Food Management System\obj\Debug\net8.0\Food Management System.pdb
 C:\Users\Nimap\Desktop\Food-Management-System\Food Management System\obj\Debug\net8.0\Food Management System.genruntimeconfig.cache
 C:\Users\Nimap\Desktop\Food-Management-System\Food Management System\obj\Debug\net8.0\ref\Food Management System.dll
+C:\Users\Nimap\Desktop\Food-Management-System\Food Management System\bin\Debug\net8.0\Food Management System.staticwebassets.runtime.json
+C:\Users\Nimap\Desktop\Food-Management-System\Food Management System\bin\Debug\net8.0\FOOD.Utility.dll
+C:\Users\Nimap\Desktop\Food-Management-System\Food Management System\bin\Debug\net8.0\FOOD.Utility.pdb

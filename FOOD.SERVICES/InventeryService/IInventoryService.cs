@@ -12,11 +12,11 @@ namespace FOOD.SERVICES.Inventery
     public interface IInventoryService
     {
          Task<IEnumerable<Inventory>> GetAllInventory();
-         Task<Inventory> GetSinglInventory(int id);
+         Task<InventoryModel> GetSinglInventory(int id);
          Task<bool> AddInventory(InventoryModel model);
          Task<bool> UpdateInventory(int id, InventoryModel user);
          Task<bool> DeleteInventory(int id);
-         Task<PaginationModel<Inventory>> GetAllQuerable(int pnum, int psize);
+         Task<PaginationModel<InventoryModel>> GetAllQuerable(int pnum, int psize);
 
     }
 }

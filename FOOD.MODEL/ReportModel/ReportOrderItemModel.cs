@@ -12,7 +12,7 @@ namespace FOOD.MODEL.ReportModel
         public int OrderId { get; set; }    
         public string? CustomerName { get; set; }    
         public decimal TotalAmount { get; set; }
-        public DateTime? OrderDate { get; set; }
+        public DateTime OrderDate { get; set; }
 
         public ICollection<ReportSummaryModel>? OrderItems { get; set; } =new List<ReportSummaryModel>();
     }

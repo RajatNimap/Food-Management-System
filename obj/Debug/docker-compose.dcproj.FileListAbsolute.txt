@@ -60,3 +60,6 @@ C:\Users\Nimap\Desktop\Food-Management-System\bin\Debug\FOOD.DATA.pdb
 C:\Users\Nimap\Desktop\Food-Management-System\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Users\Nimap\Desktop\Food-Management-System\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\Nimap\Desktop\Food-Management-System\obj\Debug\docker-c.35A3FFBA.Up2Date
+C:\Users\Nimap\Desktop\Food-Management-System\bin\Debug\Food Management System.staticwebassets.runtime.json
+C:\Users\Nimap\Desktop\Food-Management-System\bin\Debug\FOOD.Utility.dll
+C:\Users\Nimap\Desktop\Food-Management-System\bin\Debug\FOOD.Utility.pdb

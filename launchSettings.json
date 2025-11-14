@@ -1,4 +1,17 @@
+//{
+//  "profiles": {
+//    "Docker Compose": {
+//      "commandName": "DockerCompose",
+//      "commandVersion": "1.0",
+//      "serviceActions": {
+//        "foodmanagementsystem": "StartDebugging"
+//      }
+//    }
+//  }
+//}
+
 {
+  "$schema": "https://json.schemastore.org/launchsettings.json",
   "profiles": {
     "Docker Compose": {
       "commandName": "DockerCompose",

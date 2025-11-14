@@ -13,10 +13,10 @@ namespace FOOD.SERVICES.UserServices
     public interface IUserServices
     {
         public Task<IEnumerable<User>> GetAllUser();
-        public Task<User> GetSingleUser(int id);
+        public Task<UserModel> GetSingleUser(int id);
         public Task<bool> AddUser(UserModel user);   
         public Task<bool> UpdateUser(int id,UserModel user);
         public Task<bool> DeleteUser(int id);
-        public Task<PaginationModel<User>> GetAllUserPagination(int pageNumber,int pageSize);
+        public Task<PaginationModel<UserModel>> GetAllUserPagination(int pageNumber,int pageSize);
     }
 }

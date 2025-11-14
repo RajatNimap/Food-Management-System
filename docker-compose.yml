@@ -1,28 +1,68 @@
+
+# networks:
+#   FoodApp:
+
+# services:
+#   FMSDB:
+#     container_name: FoodDB
+#     image: mcr.microsoft.com/mssql/server:2022-latest
+#     ports:
+#       - "8003:1433"
+#     environment:
+#       - ACCEPT_EULA=Y
+#       - MSSQL_SA_PASSWORD=Nimap@123
+#       - MSSQL_PID=Express
+#     networks:
+#       - FoodApp
+
+#   foodmanagementsystem:
+#     container_name: Food_Management_System
+#     build:
+#       context: .
+#       dockerfile: Food Management System/Dockerfile
+#     ports:
+#       - "8004:8080"
+#     depends_on:
+#       - FMSDB
+#     networks:
+#       - FoodApp
+  
+version: '3.9'
+
 networks:
-    FoodApp: 
+  FoodApp:
+
+volumes:
+  sql_data:  
 
 services:
+
   FMSDB:
-    container_name: "FooDB"
+    container_name: FoodDB
     image: mcr.microsoft.com/mssql/server:2022-latest
     ports:
-    - 8002:1433
+      - "8003:1433"
     environment:
-     - ACCEPT_EULA=Y
-     - MSSQL_SA_PASSWORD=Nimap@123
-     - MSSQL_PID=Express
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Nimap@123
+      - MSSQL_PID=Express
+    volumes:
+      - sql_data:/var/opt/mssql   
     networks:
       - FoodApp
+    restart: unless-stopped     
+
   foodmanagementsystem:
-    container_name:  "Food_Management_System"
-    image: ${DOCKER_REGISTRY-}foodmanagementsystem
+    container_name: Food_Management_System
     build:
       context: .
       dockerfile: Food Management System/Dockerfile
+
     ports:
-      - 8001:80
+      - "8004:8080"
     depends_on:
-        - FMSDB
+      - FMSDB
+    restart: unless-stopped
+
     networks:
       - FoodApp
-    

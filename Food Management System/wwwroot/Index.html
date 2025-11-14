@@ -1,0 +1,392 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FreshFlow — Food Management System</title>
+    <meta name="description" content="Landing page for FreshFlow — food inventory, meal planning and waste reduction for restaurants and kitchens." />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <style>
+        /* Reset & base */
+        :root {
+            --accent: #ff6b35;
+            --accent-2: #ff9f6b;
+            --muted: #6b7280;
+            --bg: #0f172a;
+            --card: #0b1220;
+            --glass: rgba(255,255,255,0.04);
+            --radius: 14px;
+            --shadow: 0 8px 30px rgba(2,6,23,0.6);
+            --max-width: 1100px;
+            color-scheme: dark;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html, body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background: radial-gradient(1200px 400px at 10% 10%, rgba(255,107,53,0.06), transparent 8%), linear-gradient(180deg, #071026 0%, #041024 100%);
+            color: #e6eef8;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 28px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-decoration: none;
+            color: inherit
+        }
+
+        .logo {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            background: linear-gradient(135deg,var(--accent),var(--accent-2));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #fff;
+            font-size: 18px;
+            box-shadow: var(--shadow);
+        }
+
+        .nav {
+            display: flex;
+            gap: 18px;
+            align-items: center
+        }
+
+            .nav a {
+                color: var(--muted);
+                text-decoration: none;
+                font-size: 15px
+            }
+
+        .cta {
+            background: linear-gradient(90deg,var(--accent),var(--accent-2));
+            padding: 10px 16px;
+            border-radius: 10px;
+            color: #081120;
+            font-weight: 600;
+            text-decoration: none
+        }
+
+        /* Hero */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 440px;
+            gap: 32px;
+            align-items: center;
+            padding: 28px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(6px);
+        }
+
+        .eyebrow {
+            display: inline-block;
+            background: var(--glass);
+            padding: 6px 10px;
+            border-radius: 999px;
+            color: var(--accent-2);
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 14px
+        }
+
+        h1 {
+            font-size: 34px;
+            margin: 0 0 12px;
+            line-height: 1.02
+        }
+
+        p.lead {
+            color: var(--muted);
+            margin: 0 0 20px
+        }
+
+        .features {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap
+        }
+
+        .feature {
+            background: rgba(255,255,255,0.02);
+            padding: 12px;
+            border-radius: 12px;
+            font-size: 13px;
+            color: var(--muted);
+            display: flex;
+            gap: 10px;
+            align-items: center
+        }
+
+            .feature .dot {
+                width: 10px;
+                height: 10px;
+                border-radius: 4px;
+                background: var(--accent)
+            }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 18px
+        }
+
+        .btn {
+            padding: 12px 16px;
+            border-radius: 12px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer
+        }
+
+        .btn-ghost {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.06);
+            color: inherit
+        }
+
+        /* Right card mock */
+        .card {
+            background: linear-gradient(180deg,#081226, #071623);
+            padding: 18px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(2,6,23,0.6);
+            border: 1px solid rgba(255,255,255,0.03)
+        }
+
+            .card h3 {
+                margin: 0 0 8px;
+                font-size: 16px
+            }
+
+        .indicator {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 12px;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.02);
+            margin-top: 10px
+        }
+
+        .progress {
+            height: 8px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.03);
+            overflow: hidden
+        }
+
+            .progress > i {
+                display: block;
+                height: 100%
+            }
+
+        /* sections */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 18px;
+            margin-top: 28px
+        }
+
+        .card-lg {
+            background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+            padding: 20px;
+            border-radius: 14px
+        }
+
+        .stat {
+            font-size: 28px;
+            font-weight: 700
+        }
+
+        footer {
+            margin-top: 28px;
+            color: var(--muted);
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        /* responsive */
+        @media (max-width:980px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-3 {
+                grid-template-columns: repeat(1,1fr)
+            }
+        }
+
+        /* small decorative */
+        .badge {
+            display: inline-block;
+            padding: 6px 8px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.03);
+            font-size: 13px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="brand" href="#">
+                <div class="logo">FF</div>
+                <div>
+                    <div style="font-weight:700">FreshFlow</div>
+                    <div style="font-size:12px;color:var(--muted)">Food Management System</div>
+                </div>
+            </a>
+            <nav class="nav">
+                <a href="#features">Features</a>
+                <a href="#how">How it works</a>
+                <a href="#pricing">Pricing</a>
+                <a class="cta" href="#signup">Get started</a>
+            </nav>
+        </header>
+
+        <main class="hero" role="main">
+            <section>
+                <div class="eyebrow">Reduce waste • Save cost • Track inventory</div>
+                <h1>Smart inventory & meal planning for kitchens of all sizes</h1>
+                <p class="lead">FreshFlow helps restaurants, caterers and community kitchens manage stock, plan menus, predict demand and minimize food waste — all from a single dashboard.</p>
+
+                <div class="features">
+                    <div class="feature"><span class="dot"></span> Real-time inventory</div>
+                    <div class="feature"><span class="dot"></span> Automated reorder alerts</div>
+                    <div class="feature"><span class="dot"></span> Waste tracking & reports</div>
+                </div>
+
+                <div class="actions">
+                    <a class="btn" href="#signup" style="background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#061019;border-radius:12px;text-decoration:none">Start free trial</a>
+                    <a class="btn btn-ghost" href="#demo">See demo</a>
+                </div>
+
+                <div style="margin-top:16px;color:var(--muted);font-size:13px">Trusted by kitchens in 100+ cities • <span class="badge">No credit card required</span></div>
+            </section>
+
+            <aside class="card" aria-hidden="false">
+                <div style="display:flex;justify-content:space-between;align-items:center">
+                    <div>
+                        <h3>Daily overview</h3>
+                        <div class="indicator">Orders today • <strong style="color:#fff;margin-left:6px">128</strong></div>
+                    </div>
+                    <div style="text-align:right">
+                        <div style="font-weight:700">Stock health</div>
+                        <div style="font-size:12px;color:var(--muted)">Updated 2h ago</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <div style="font-weight:600">Tomatoes</div>
+                        <div style="font-size:12px;color:var(--muted)">Left: 24 kg</div>
+                    </div>
+                    <div style="width:160px">
+                        <div class="progress"><i style="width:30%;background:linear-gradient(90deg,var(--accent),var(--accent-2))"></i></div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <div style="font-weight:600">Chicken breasts</div>
+                        <div style="font-size:12px;color:var(--muted)">Left: 12 kg</div>
+                    </div>
+                    <div style="width:160px">
+                        <div class="progress"><i style="width:50%;background:linear-gradient(90deg,#acd6ff,#66b2ff)"></i></div>
+                    </div>
+                </div>
+
+                <div class="item" style="margin-top:14px;display:flex;flex-direction:column;gap:8px">
+                    <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-weight:600">Low-stock alerts</div><div style="font-size:13px;color:var(--muted)">3 items</div></div>
+                    <div style="display:flex;gap:8px">
+                        <div style="background:rgba(255,107,53,0.08);padding:8px;border-radius:8px;font-size:12px">Order now</div>
+                        <div style="background:rgba(255,255,255,0.02);padding:8px;border-radius:8px;font-size:12px">View report</div>
+                    </div>
+                </div>
+
+            </aside>
+        </main>
+
+        <section class="grid-3" id="features">
+            <div class="card-lg">
+                <h4>Inventory & stock</h4>
+                <p style="color:var(--muted);font-size:14px">Scan or import stock, set par levels and auto-generate purchase orders when levels fall below thresholds.</p>
+                <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
+                    <div class="stat">92%</div>
+                    <div style="color:var(--muted);font-size:13px">Fulfillment efficiency</div>
+                </div>
+            </div>
+
+            <div class="card-lg">
+                <h4>Menu & recipes</h4>
+                <p style="color:var(--muted);font-size:14px">Link recipes to ingredients to instantly calculate cost-per-plate and optimal batch sizes based on demand forecasting.</p>
+                <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
+                    <div class="stat">₹120</div>
+                    <div style="color:var(--muted);font-size:13px">Avg. cost/suggested menu item</div>
+                </div>
+            </div>
+
+            <div class="card-lg" id="how">
+                <h4>Waste analytics</h4>
+                <p style="color:var(--muted);font-size:14px">Track spoilage, donations and overproduction. Generate monthly reports that show where you can save.</p>
+                <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
+                    <div class="stat">34%</div>
+                    <div style="color:var(--muted);font-size:13px">Avg. waste reduction</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div>© <strong>FreshFlow</strong> 2025 — Built for kitchens</div>
+            <div style="display:flex;gap:12px;align-items:center">
+                <a href="#pricing" style="color:var(--muted);text-decoration:none">Pricing</a>
+                <a href="#contact" style="color:var(--muted);text-decoration:none">Contact</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

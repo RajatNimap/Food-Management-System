@@ -48,8 +48,6 @@ namespace FOOD.SERVICES.ReportExport
                     worksheet.Cells[8, 7].Value = "Item Total";
                     worksheet.Cells[8, 8].Value = "Order Total";
 
-                   
-
                     int startRow = 9;
 
                     foreach (var order in data.Orders)

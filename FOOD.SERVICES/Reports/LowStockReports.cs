@@ -29,7 +29,7 @@ namespace FOOD.SERVICES.Reports
                 var lowStockItems = await _unitOfWork.InventoryRepository.GetLowStockItems();
                 return new LowStockReportModel
                 {
-                    GeneratedAt = DateTime.UtcNow,
+                    GeneratedAt = DateTime.Now,
                     TotalLowStockItems = lowStockItems.Count(),
                     CiticalItems = lowStockItems.Count(i => i.QuantityAvailable <= 0),
                     LowStockItems = _mapper.Map<ICollection<InverntoryReportModel>>(lowStockItems),

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FOOD.DATA.Infrastructure;
 using FOOD.MODEL.ReportModel;
+using FOOD.Utility;
 
 namespace FOOD.SERVICES.Reports
 {
@@ -29,13 +30,13 @@ namespace FOOD.SERVICES.Reports
                     TotalOrders = OrdersPlaced.Count(),
                     TotalItemsSold = OrdersPlaced.Sum(o => o.OrderItems.Sum(oi => oi.QuantityOrdered)),
                     TotalRevenue = OrdersPlaced.Sum(o => o.TotalAmount),
-                    
+
                     Orders = OrdersPlaced.Select(o => new ReportOrderItemModel
                     {
                         OrderId = o.Id,
                         CustomerName = o.CustomerName,
                         TotalAmount = o.TotalAmount,
-                        OrderDate = o.CreatedDate.HasValue ? o.CreatedDate.Value.ToLocalTime():null,    
+                        OrderDate = UtilityHelper.ToLocalDateandTime(o.CreatedDate),
 
                         OrderItems = o.OrderItems.Select(oi => new ReportSummaryModel
                         {
