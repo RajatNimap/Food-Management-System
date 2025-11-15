@@ -34,10 +34,10 @@ namespace FOOD.SERVICES.MenuServices
             return menus;
         }
 
-        public async Task<Menu> GetMenuByIdAsync(int id)
+        public async Task<MenuModel> GetMenuByIdAsync(int id)
         {
             var Menukey = $"Menu{id}";
-            if(_cache.TryGetValue(Menukey,out Menu? cachedata))
+            if(_cache.TryGetValue(Menukey,out MenuModel? cachedata))
             {
                 if(cachedata != null)
                 {
@@ -45,9 +45,10 @@ namespace FOOD.SERVICES.MenuServices
                 }
             }
             var menu = await _unitOfWork.MenuRepository.GetById(id);
-            _mapper.Map<MenuModel>(menu);
-            _cache.Set(Menukey, menu, TimeSpan.FromMinutes(5));
-            return menu;
+            var model=_mapper.Map<MenuModel>(menu);
+
+            _cache.Set(Menukey, model, TimeSpan.FromMinutes(5));
+            return model;
         }
 
         public async Task<bool> CreateMenuAsync(MenuModel menuModel)
