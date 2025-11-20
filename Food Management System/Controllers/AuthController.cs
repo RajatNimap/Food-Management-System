@@ -40,9 +40,7 @@ namespace Food_Management_System.Controllers
             var GeneratingToken = await auth.RefreshTokenIssue(token);
             if (string.IsNullOrWhiteSpace(GeneratingToken.Item1) || string.IsNullOrWhiteSpace(GeneratingToken.Item2))
             {
-
                 return BadRequest("Invalid Authentication");
-
             }
             return Ok(new
             {

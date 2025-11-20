@@ -12,7 +12,6 @@ using FOOD.MODEL.Model;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Identity.Client;
 using Microsoft.IdentityModel.Tokens;
-using System.Security.Claims;
 using System.Security.Cryptography;
 using Azure.Core;
 
@@ -68,15 +67,36 @@ namespace FOOD.SERVICES.AuthenticationServices
             var isValidToken = await unitOfWork.RefreshTokenRepository.IsValidToken(refreshToken);
             if (isValidToken == null)
             {
-                return Task.FromResult((string.Empty, string.Empty)).Result;
+                return (string.Empty, string.Empty);
             }
             isValidToken.IsRevoked = true;  
-            var user = await unitOfWork.UserRepository.verifyMail(isValidToken.Email);  
+            var user = await unitOfWork.UserRepository.GetById(isValidToken.UserId);  
 
             var accessToken = jwtService.JwtAccessToken(user);
             var refreshNewToken = jwtService.JwtRefreshToken();
+            var refreshTokenData = new RefreshToken
+            {
+                Token = refreshNewToken,
+                UserId = user.Id,
+                ExpiresDate = DateTime.UtcNow.AddDays(7),
+                Email = user.Email,
+                IsRevoked = false
+            };
+            await unitOfWork.RefreshTokenRepository.Add(refreshTokenData);
             await unitOfWork.Commit();
             return (accessToken, refreshNewToken);
+        }
+
+        public async Task<bool> RevokedToken(string refreshToken) {
+
+            var RevokedToken = await unitOfWork.RefreshTokenRepository.IsValidToken(refreshToken);
+            if (RevokedToken != null) { 
+
+                    RevokedToken.IsRevoked = true;
+                    await unitOfWork.Commit();
+            }
+            return true;
+
         }
     }
 }
