@@ -33,7 +33,7 @@ namespace Food_Management_System.Controllers
         }
        
         [HttpPut("{id}")]
-        [Authorize(Roles = "Cashier")]
+        [Authorize(Roles = "Cashier,Admin")]
         public async Task<IActionResult> UpdateOrder(int id, OrdersModel model)
         {
             var result = await _orderService.UpdateOrderAsync(id,model);

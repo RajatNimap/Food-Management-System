@@ -229,8 +229,7 @@
               "RelativeToolTip": "..\\FOOD.Utility\\Extension\\Pagination.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T08:56:40.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T08:56:40.285Z"
             },
             {
               "$type": "Document",
@@ -254,8 +253,7 @@
               "RelativeToolTip": "FOOD.SERVICES\\InventeryService\\InventoryService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T06:39:35.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T06:39:35.381Z"
             },
             {
               "$type": "Document",
@@ -279,8 +277,7 @@
               "RelativeToolTip": "FOOD.SERVICES\\UserServices\\UserServices.cs",
               "ViewState": "AgIAAGgAAAAAAAAAAAAcwGsAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T06:36:20.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T06:36:20.46Z"
             },
             {
               "$type": "Document",
@@ -292,8 +289,7 @@
               "RelativeToolTip": "FOOD.SERVICES\\MailServices\\IEmailServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T06:28:21.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T06:28:21.54Z"
             },
             {
               "$type": "Document",
@@ -303,7 +299,7 @@
               "RelativeDocumentMoniker": "FOOD.SERVICES\\MenuService\\MenuService.cs",
               "ToolTip": "C:\\Users\\Nimap\\Desktop\\Food-Management-System\\FOOD.SERVICES\\MenuService\\MenuService.cs",
               "RelativeToolTip": "FOOD.SERVICES\\MenuService\\MenuService.cs",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAuwJIAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T06:53:47.091Z",
               "EditorCaption": ""
