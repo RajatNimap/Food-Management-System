@@ -9,6 +9,7 @@ namespace Food_Management_System.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
     public class ReportController : ControllerBase
     {
         private readonly IDailyOrderReport _reportService;
@@ -24,7 +25,6 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Report(DateOnly date)
         {
            var data= await _reportService.DailyReport(date);
@@ -32,7 +32,6 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpGet("LowStockReport")]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> LowStockReport()
         {
             var data = await _lowStockReports.GetLowStockReport();
@@ -40,7 +39,6 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpGet("DailyReport")]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DownloadReport(DateOnly reportDate)
         {
 
@@ -54,7 +52,6 @@ namespace Food_Management_System.Controllers
                         fileName);
         }
         [HttpGet("LowStockExcel")]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> LowStockExcel()
         {
             var fileBytes = await _lowStockExcelExporter.LowStockExport();

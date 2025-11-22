@@ -9,6 +9,7 @@ namespace Food_Management_System.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
     public class InventoryController : ControllerBase
     {
         private readonly IInventoryService _inventoryService;
@@ -19,7 +20,6 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles ="Admin")]
         public async Task<IActionResult> GetAllInventory(int pnum, int psize)
         {
             var inventoryItems = await _inventoryService.GetAllQuerable(pnum,psize);
@@ -27,7 +27,6 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpGet("{id}")]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetSingleInventory(int id)
         {
             var inventory = await _inventoryService.GetSinglInventory(id);
@@ -35,7 +34,6 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> AddInventory(InventoryModel model)
         {
             var result = await _inventoryService.AddInventory(model);
@@ -46,7 +44,6 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpPut("{id}")]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateInventory(int id, InventoryModel model)
         {
             var result = await _inventoryService.UpdateInventory(id, model);
@@ -57,7 +54,6 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteInventory(int id)
         {
             var result = await _inventoryService.DeleteInventory(id);

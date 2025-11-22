@@ -8,6 +8,8 @@ namespace Food_Management_System.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
+
     public class RecipeController : ControllerBase
     {
         private readonly IRecipeService _recipeService;
@@ -18,14 +20,12 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllRecipes(int pnum, int psize)
         {
             var recipes = await _recipeService.GetPaginationAsync(pnum,psize);
             return Ok(recipes);
         }
         [HttpGet("{id}")]
-        [Authorize(Roles = "Admin")]
 
         public async Task<IActionResult> GetRecipeById(int id)
         {
@@ -34,8 +34,6 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
-
         public async Task<IActionResult> CreateRecipe(RecipeModel model)
         {
             var result = await _recipeService.CreateRecipeAsync(model);
@@ -46,8 +44,6 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpPut("{id}")]
-        [Authorize(Roles = "Admin")]
-
         public async Task<IActionResult> UpdateRecipe(int id, RecipeModel model)
         {
             var result = await _recipeService.UpdateRecipeAsync(id, model);
@@ -58,7 +54,6 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteRecipe(int id)
         {
             var result = await _recipeService.DeleteRecipeAsync(id);

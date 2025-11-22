@@ -9,6 +9,7 @@ namespace Food_Management_System.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
     public class UserController : ControllerBase
     {
         private readonly IUserServices userServices;
@@ -18,7 +19,6 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllUser(int pageNumber,int pageSize) {
 
             var UserDetail = await userServices.GetAllUserPagination(pageNumber, pageSize);
@@ -26,14 +26,12 @@ namespace Food_Management_System.Controllers
         }
 
         [HttpGet("{id}")]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetSingleUser(int id)
         {
             var User = await userServices.GetSingleUser(id);
             return Ok(User);    
         }
         [HttpPost]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> AddUser(UserModel model)
         {
                 await userServices.AddUser(model);  
@@ -41,14 +39,12 @@ namespace Food_Management_System.Controllers
                 
         }
         [HttpPut("{Id}")]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Updateuser(int Id, UserModel model)
         {
             await userServices.UpdateUser(Id, model);
             return Ok("User Updated Successfully");    
         }
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteUser(int id)
         {
             await userServices.DeleteUser(id);

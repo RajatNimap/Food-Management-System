@@ -27,6 +27,10 @@ namespace FOOD.SERVICES.Reports
             try
             {
                 var lowStockItems = await _unitOfWork.InventoryRepository.GetLowStockItems();
+                var dataaee = DateTime.Now;
+                var dataaee1 = DateTime.UtcNow;
+                var utec = DateTime.Now;
+
                 return new LowStockReportModel
                 {
                     GeneratedAt = DateTime.Now,
