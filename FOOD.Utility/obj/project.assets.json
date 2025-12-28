@@ -47,19 +47,6 @@
           }
         }
       },
-      "BCrypt.Net-Next/4.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/BCrypt.Net-Next.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/BCrypt.Net-Next.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -1024,25 +1011,11 @@
           }
         }
       },
-      "FOOD.DATA/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "BCrypt.Net-Next": "4.0.3",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
-        },
-        "compile": {
-          "bin/placeholder/FOOD.DATA.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FOOD.DATA.dll": {}
-        }
-      },
       "FOOD.MODEL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "FOOD.DATA": "1.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
         },
         "compile": {
           "bin/placeholder/FOOD.MODEL.dll": {}
@@ -1090,37 +1063,6 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
-      ]
-    },
-    "BCrypt.Net-Next/4.0.3": {
-      "sha512": "W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
-      "type": "package",
-      "path": "bcrypt.net-next/4.0.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "bcrypt.net-next.4.0.3.nupkg.sha512",
-        "bcrypt.net-next.nuspec",
-        "ico.png",
-        "lib/net20/BCrypt.Net-Next.dll",
-        "lib/net20/BCrypt.Net-Next.xml",
-        "lib/net35/BCrypt.Net-Next.dll",
-        "lib/net35/BCrypt.Net-Next.xml",
-        "lib/net462/BCrypt.Net-Next.dll",
-        "lib/net462/BCrypt.Net-Next.xml",
-        "lib/net472/BCrypt.Net-Next.dll",
-        "lib/net472/BCrypt.Net-Next.xml",
-        "lib/net48/BCrypt.Net-Next.dll",
-        "lib/net48/BCrypt.Net-Next.xml",
-        "lib/net5.0/BCrypt.Net-Next.dll",
-        "lib/net5.0/BCrypt.Net-Next.xml",
-        "lib/net6.0/BCrypt.Net-Next.dll",
-        "lib/net6.0/BCrypt.Net-Next.xml",
-        "lib/netstandard2.0/BCrypt.Net-Next.dll",
-        "lib/netstandard2.0/BCrypt.Net-Next.xml",
-        "lib/netstandard2.1/BCrypt.Net-Next.dll",
-        "lib/netstandard2.1/BCrypt.Net-Next.xml",
-        "readme.md"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -2872,40 +2814,36 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "FOOD.DATA/1.0.0": {
-      "type": "project",
-      "path": "../Food-Management-System/FOOD.DATA/FOOD.DATA.csproj",
-      "msbuildProject": "../Food-Management-System/FOOD.DATA/FOOD.DATA.csproj"
-    },
     "FOOD.MODEL/1.0.0": {
       "type": "project",
-      "path": "../Food-Management-System/FOOD.MODEL/FOOD.MODEL.csproj",
-      "msbuildProject": "../Food-Management-System/FOOD.MODEL/FOOD.MODEL.csproj"
+      "path": "../FOOD.MODEL/FOOD.MODEL.csproj",
+      "msbuildProject": "../FOOD.MODEL/FOOD.MODEL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "FOOD.MODEL >= 1.0.0"
+      "FOOD.MODEL >= 1.0.0",
+      "Microsoft.EntityFrameworkCore >= 9.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nimap\\.nuget\\packages\\": {},
+    "C:\\Users\\Rajat Pandit\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nimap\\Desktop\\FOOD.Utility\\FOOD.Utility.csproj",
+      "projectUniqueName": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.Utility\\FOOD.Utility.csproj",
       "projectName": "FOOD.Utility",
-      "projectPath": "C:\\Users\\Nimap\\Desktop\\FOOD.Utility\\FOOD.Utility.csproj",
-      "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nimap\\Desktop\\FOOD.Utility\\obj\\",
+      "projectPath": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.Utility\\FOOD.Utility.csproj",
+      "packagesPath": "C:\\Users\\Rajat Pandit\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.Utility\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Rajat Pandit\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2920,8 +2858,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Nimap\\Desktop\\Food-Management-System\\FOOD.MODEL\\FOOD.MODEL.csproj": {
-              "projectPath": "C:\\Users\\Nimap\\Desktop\\Food-Management-System\\FOOD.MODEL\\FOOD.MODEL.csproj"
+            "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.MODEL\\FOOD.MODEL.csproj": {
+              "projectPath": "C:\\Users\\Rajat Pandit\\OneDrive\\Desktop\\FMS\\Food-Management-System\\FOOD.MODEL\\FOOD.MODEL.csproj"
             }
           }
         }
@@ -2936,11 +2874,17 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[9.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -2957,7 +2901,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

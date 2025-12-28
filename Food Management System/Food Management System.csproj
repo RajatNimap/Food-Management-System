@@ -26,12 +26,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FOOD.DATA\FOOD.DATA.csproj" />
-    <ProjectReference Include="..\FOOD.SERVICES\FOOD.SERVICES.csproj" />
+    <None Include="appsettings.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="appsettings.json" />
+    <ProjectReference Include="..\FOOD.SERVICES\FOOD.SERVICES.csproj" />
   </ItemGroup>
 
 </Project>

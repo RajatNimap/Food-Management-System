@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Food-Management-System\FOOD.MODEL\FOOD.MODEL.csproj" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FOOD.MODEL\FOOD.MODEL.csproj" />
   </ItemGroup>
 
 </Project>

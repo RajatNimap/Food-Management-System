@@ -880,7 +880,7 @@
       },
       "FOOD.MODEL/1.0.0": {
         "dependencies": {
-          "FOOD.DATA": "1.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
         },
         "runtime": {
           "FOOD.MODEL.dll": {
@@ -891,7 +891,8 @@
       },
       "FOOD.Utility/1.0.0": {
         "dependencies": {
-          "FOOD.MODEL": "1.0.0"
+          "FOOD.MODEL": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.0"
         },
         "runtime": {
           "FOOD.Utility.dll": {

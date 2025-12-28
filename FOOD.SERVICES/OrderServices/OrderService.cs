@@ -203,7 +203,7 @@ namespace FOOD.SERVICES.OrderServices
         {
             try
             {
-                return await _unitOfWork.OrderRepository.GetAllQuerable().PagedResult(pnum, psize, x => x.Id);
+                return await _unitOfWork.OrderRepository.GetAllQuerable().Include(x=>x.OrderItems).PagedResult(pnum, psize, x => x.Id);
 
             }catch(Exception ex)
             {

@@ -52,7 +52,7 @@ namespace Food_Management_System.Controllers
             else
                 return BadRequest("Failed to delete order");
         }
-        [Authorize(Roles = "Cashier")]
+        [Authorize(Roles = "Cashier,Admin")]
         [HttpPost("PlacingOrder")]
         public async Task<IActionResult> PlacingOrder(OrdersModel model)
         {

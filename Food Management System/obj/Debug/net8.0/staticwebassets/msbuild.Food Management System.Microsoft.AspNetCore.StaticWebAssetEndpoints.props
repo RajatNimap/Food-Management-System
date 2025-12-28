@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/Food Management System/Index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JBxE/zhjPlk6rWpaC/l4mEZ2vqWM2jeDSxLvAB8S4sI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"13790"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022JBxE/zhjPlk6rWpaC/l4mEZ2vqWM2jeDSxLvAB8S4sI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 06 Dec 2025 05:36:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Food Management System/Index.sqyxy7hsrg.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"sqyxy7hsrg"},{"Name":"integrity","Value":"sha256-JBxE/zhjPlk6rWpaC/l4mEZ2vqWM2jeDSxLvAB8S4sI="},{"Name":"label","Value":"_content/Food Management System/Index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"13790"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022JBxE/zhjPlk6rWpaC/l4mEZ2vqWM2jeDSxLvAB8S4sI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 06 Dec 2025 05:36:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

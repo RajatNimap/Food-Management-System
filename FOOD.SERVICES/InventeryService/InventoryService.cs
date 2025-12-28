@@ -35,14 +35,22 @@ namespace FOOD.SERVICES.Inventery
         }
         public async Task<bool> AddInventory(InventoryModel model)
         {
-            model.CreatedDate = DateTime.UtcNow;
-            model.CreatedBy = null; 
-            
-            var inventoryEntity = _mapper.Map<Inventory>(model);
-            await unitOfWork.InventoryRepository.Add(inventoryEntity);
-            
-            var rowsAffected = await unitOfWork.Commit();
-            return rowsAffected > 0;
+            var rowsAffected = 0;
+            try
+            {
+                model.CreatedDate = DateTime.UtcNow;
+                model.CreatedBy = null;
+
+                var inventoryEntity = _mapper.Map<Inventory>(model);
+                await unitOfWork.InventoryRepository.Add(inventoryEntity);
+
+                 rowsAffected = await unitOfWork.Commit();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+            return rowsAffected > 0; ;
         }
 
         public async Task<bool> UpdateInventory(int id, InventoryModel model)
@@ -51,8 +59,12 @@ namespace FOOD.SERVICES.Inventery
             if (existingInventory == null)
                 throw new KeyNotFoundException("Inventory not found");
 
-            _mapper.Map(model, existingInventory);
-            
+            // _mapper.Map(model, existingInventory);
+
+            existingInventory.ItemName = model.ItemName;
+            existingInventory.Unit = model.Unit;
+            existingInventory.QuantityAvailable = model.QuantityAvailable;
+            existingInventory.ReorderLevel = model.ReorderLevel;
             existingInventory.ModifiedDate = DateTime.UtcNow;
             existingInventory.ModifiedBy = null; 
             

@@ -36,6 +36,7 @@ namespace Food_Management_System.Controllers
         [HttpPost]
         public async Task<IActionResult> AddInventory(InventoryModel model)
         {
+
             var result = await _inventoryService.AddInventory(model);
             if (result)
                 return Ok("Inventory Added");

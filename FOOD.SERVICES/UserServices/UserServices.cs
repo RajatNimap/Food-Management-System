@@ -136,7 +136,10 @@ namespace FOOD.SERVICES.UserServices
                 if (existingUser == null)
                     throw new KeyNotFoundException("User not found");
 
-                _mapper.Map(user, existingUser);
+                //_mapper.Map(user, existingUser);
+                existingUser.Name = user.Name;
+                existingUser.Email = user.Email;
+                existingUser.Role = (DATA.Entites.Role)user.Role;
                 existingUser.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
                 existingUser.ModifiedDate = DateTime.UtcNow;
                 existingUser.ModifiedBy = _userContext.GetCurrentUserId();

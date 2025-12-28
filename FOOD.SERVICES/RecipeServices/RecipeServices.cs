@@ -62,9 +62,24 @@ namespace FOOD.SERVICES.RecipeServices
         {
             try
             {
-                recipeModel.CreatedDate = DateTime.UtcNow;
-                var recipeEntity = _mapper.Map<Recipe>(recipeModel);
-                await _unitOfWork.RecipeRepository.Add(recipeEntity);
+                var inventory = await _unitOfWork.InventoryRepository.GetById(recipeModel.ItemId);
+
+                if (inventory == null)
+                    throw new Exception("Invalid InventoryId");
+
+                var recipe = new Recipe
+                {
+                    MenuId = recipeModel.MenuId,
+                    Inventory = inventory,
+                    ItemId=recipeModel.ItemId,// EF sets InventoryId automatically
+                    QuantityRequired = recipeModel.QuantityRequired
+                };
+
+                //recipeModel.CreatedDate = DateTime.UtcNow;
+
+                //var recipeEntity = _mapper.Map<Recipe>(recipeModel);
+
+                await _unitOfWork.RecipeRepository.Add(recipe);
 
                 var rowsAffected = await _unitOfWork.Commit();
                 return rowsAffected > 0;
@@ -83,7 +98,10 @@ namespace FOOD.SERVICES.RecipeServices
                 if (existingRecipe == null)
                     throw new KeyNotFoundException($"Recipe with ID {id} not found");
 
-                _mapper.Map(recipeModel, existingRecipe);
+                //_mapper.Map(recipeModel, existingRecipe);
+                existingRecipe.MenuId = recipeModel.MenuId;
+                existingRecipe.ItemId = recipeModel.ItemId;
+                existingRecipe.QuantityRequired = recipeModel.QuantityRequired;
 
                 var rowsAffected = await _unitOfWork.Commit();
                 return rowsAffected > 0;

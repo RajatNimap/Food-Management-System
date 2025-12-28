@@ -37,7 +37,7 @@ namespace FOOD.SERVICES.AuthenticationServices
                 issuer: config["JWT:Issuer"],
                 audience: config["JWT:Audience"],
                 claims: Claims,
-                expires: DateTime.UtcNow.AddHours(3),
+                expires: DateTime.UtcNow.AddDays(5),
                 signingCredentials: Credential
 
             );

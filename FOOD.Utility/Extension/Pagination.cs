@@ -36,7 +36,7 @@ namespace FOOD.Utility.Extension
                    .Skip((pageNumber - 1) * pageSize)
                    .Take(pageSize)
                    .ToListAsync();
-                
+
             }
 
             return new PaginationModel<T>

@@ -10,6 +10,7 @@ namespace FOOD.MODEL.Model
     public class BaseEntityModel
     {
         
+        public int Id { get; set; }
         public DateTime? CreatedDate { get; set; } 
         public DateTime? ModifiedDate { get; set; } 
         [JsonIgnore]
