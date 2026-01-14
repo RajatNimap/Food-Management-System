@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FOOD.DATA.Entites;
 
 namespace FOOD.DATA.Infrastructure
 {
@@ -10,9 +11,11 @@ namespace FOOD.DATA.Infrastructure
     {
         Task<IEnumerable<T>> GetAll();
         Task<T> GetById(int id);    
-        Task Update(T entity);  
+        void Update(T entity);  
         Task Add(T entity); 
-        Task Delete(T entity);
+        void Delete(T entity);
+        IQueryable<T> GetAllQuerable();
+
 
     }
 }

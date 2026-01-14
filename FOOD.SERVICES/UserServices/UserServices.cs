@@ -1,0 +1,156 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using AutoMapper;
+using FOOD.DATA.Entites;
+using FOOD.DATA.Infrastructure;
+using FOOD.DATA.Repository.UserRepository;
+using FOOD.MODEL.HelperModel;
+using FOOD.MODEL.Model;
+using FOOD.MODEL.Pagination;
+using Microsoft.AspNetCore.Http;
+using FOOD.Utility.Extension;
+using FOOD.Utility;
+
+namespace FOOD.SERVICES.UserServices
+{
+    public class UserServices : IUserServices
+    {
+        private readonly IUnitOfWork unitOfWork;
+        private readonly IMapper _mapper;
+        private readonly IUserContext _userContext;
+        public UserServices(IUnitOfWork _unit, IMapper mapper, IUserContext userContext)
+        {
+            unitOfWork = _unit;
+            _mapper = mapper;
+            _userContext = userContext;
+        }
+
+        public async Task<bool> AddUser(UserModel user)
+        {
+            try
+            {
+                var UserEmailExist = await unitOfWork.UserRepository.verifyMail(user.Email);
+                if(UserEmailExist != null)
+                {
+                    throw new Exception("Email Already Exist");
+                }
+
+                user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+                user.CreatedDate = DateTime.UtcNow;
+                user.CreatedBy = _userContext.GetCurrentUserId();
+                var UserEntity = _mapper.Map<User>(user);
+                await unitOfWork.UserRepository.Add(UserEntity);
+
+                var rowaffected = await unitOfWork.Commit();
+                return rowaffected > 0;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error occurred while adding user", ex);
+            }
+        }
+
+        public async Task<bool> DeleteUser(int id)
+        {
+            try
+            {
+                var Data = await unitOfWork.UserRepository.GetById(id);
+                if (Data == null)
+                    throw new KeyNotFoundException($"User with ID {id} not found");
+
+                unitOfWork.UserRepository.Delete(Data);
+                var rowaffect = await unitOfWork.Commit();
+
+                return rowaffect > 0;
+            }
+            catch (Exception ex)
+            {
+                
+                throw new Exception($"Error occurred while deleting user with ID {id}", ex);
+            }
+        }
+
+        public async Task<IEnumerable<User>> GetAllUser()
+        {
+            try
+            {
+                return await unitOfWork.UserRepository.GetAll();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error occurred while retrieving all users", ex);
+            }
+        }
+
+        public async Task<PaginationModel<UserModel>> GetAllUserPagination(int pageNumber,int pageSize)
+        {
+            try
+            {
+                var data =  await unitOfWork.UserRepository.GetAllQuerable().PagedResult(
+                    pageNumber,
+                    pageSize,
+                 u => u.Id
+                );
+                var model = _mapper.Map<List<UserModel>>(data.Items);
+                var result = new PaginationModel<UserModel>
+                {
+                    Items = model,
+                    TotalRecord = data.TotalRecord,
+                    PageNumer = data.PageNumer,
+                    PageSize = data.PageSize,
+                };
+
+                return result;
+
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error occurred while retrieving all users", ex);
+            }
+        }
+        public async Task<UserModel> GetSingleUser(int Id)
+        {
+            try
+            {
+                var user = await unitOfWork.UserRepository.GetById(Id);
+                if (user == null)
+                    throw new KeyNotFoundException($"User with ID {Id} not found");
+               var model= _mapper.Map<UserModel>(user);
+                return model;
+                
+            }
+                
+            catch (Exception ex)
+            {
+                throw new Exception($"Error occurred while retrieving user with ID {Id}", ex);
+            }
+        }
+
+        public async Task<bool> UpdateUser(int id, UserModel user)
+        {
+            try
+            {
+                var existingUser = await unitOfWork.UserRepository.GetById(id);
+                if (existingUser == null)
+                    throw new KeyNotFoundException("User not found");
+
+                //_mapper.Map(user, existingUser);
+                existingUser.Name = user.Name;
+                existingUser.Email = user.Email;
+                existingUser.Role = (DATA.Entites.Role)user.Role;
+                existingUser.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+                existingUser.ModifiedDate = DateTime.UtcNow;
+                existingUser.ModifiedBy = _userContext.GetCurrentUserId();
+
+                var rowsAffected = await unitOfWork.Commit();
+                return rowsAffected > 0;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error occurred while updating user with ID {id}", ex);
+            }
+        }
+    }
+}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FOOD.DATA.Entites;
 using Microsoft.EntityFrameworkCore;
 
 namespace FOOD.DATA.Infrastructure
@@ -12,7 +13,7 @@ namespace FOOD.DATA.Infrastructure
         private readonly DataContext dbcontext;
         private readonly DbSet<T> dbset;
 
-        public Repository(DataContext _dbcontext, DbSet<T> dbset)
+        public Repository(DataContext _dbcontext)
         {
             dbcontext = _dbcontext;
             dbset = dbcontext.Set<T>();
@@ -22,7 +23,7 @@ namespace FOOD.DATA.Infrastructure
             await dbset.AddAsync(entity);
         }
 
-        public async Task Delete(T entity)
+        public void Delete(T entity)
         {
             dbset.Remove(entity);
             dbcontext.Entry(entity).State = EntityState.Deleted;
@@ -38,9 +39,15 @@ namespace FOOD.DATA.Infrastructure
             return await dbset.FindAsync(id);   
         }
 
-        public async Task Update(T entity)
+        public void Update(T entity)
         {
               dbset.Update(entity);
         }
+        public IQueryable<T> GetAllQuerable()
+        {
+            return dbset.AsQueryable().AsNoTracking();
+
+        }
+
     }
 }

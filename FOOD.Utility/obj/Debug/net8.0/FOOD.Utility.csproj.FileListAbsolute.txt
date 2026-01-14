@@ -1,0 +1,16 @@
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.Utility\obj\Debug\net8.0\FOOD.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.Utility\obj\Debug\net8.0\FOOD.Utility.AssemblyInfoInputs.cache
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.Utility\obj\Debug\net8.0\FOOD.Utility.AssemblyInfo.cs
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.Utility\obj\Debug\net8.0\FOOD.Utility.csproj.CoreCompileInputs.cache
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.Utility\obj\Debug\net8.0\FOOD.Utility.sourcelink.json
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.Utility\obj\Debug\net8.0\FOOD.Utility.csproj.AssemblyReference.cache
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.Utility\bin\Debug\net8.0\FOOD.Utility.deps.json
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.Utility\bin\Debug\net8.0\FOOD.Utility.dll
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.Utility\bin\Debug\net8.0\FOOD.Utility.pdb
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.Utility\bin\Debug\net8.0\FOOD.MODEL.dll
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.Utility\bin\Debug\net8.0\FOOD.MODEL.pdb
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.Utility\obj\Debug\net8.0\FOOD.Uti.73A0DBF6.Up2Date
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.Utility\obj\Debug\net8.0\FOOD.Utility.dll
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.Utility\obj\Debug\net8.0\refint\FOOD.Utility.dll
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.Utility\obj\Debug\net8.0\FOOD.Utility.pdb
+C:\Users\Rajat Pandit\OneDrive\Desktop\FMS\Food-Management-System\FOOD.Utility\obj\Debug\net8.0\ref\FOOD.Utility.dll

@@ -9,6 +9,26 @@ namespace FOOD.DATA
         {
 
         }
-        public DbSet<Testing> Testdbs { get; set; } 
+        public DbSet<User> users { get; set; }
+        public DbSet<Inventory> inventories { get; set; }
+        public DbSet<Orders> orders { get; set; }   
+        public DbSet<OrderItems> orderItems { get; set; }   
+        public DbSet<Recipe> recipes { get; set; }
+        public DbSet<Menu> menus { get; set; }
+        public DbSet<RefreshToken> refreshTokens { get; set; }  
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<User>()
+                .Property(u => u.Role)
+                .HasConversion<string>();
+
+            modelBuilder.Entity<User>()
+                .HasIndex(u => u.Email)
+                .IsUnique();
+           
+        }
+     
+
     }
+  
 }
